@@ -4,16 +4,25 @@
     <meta charset="utf-8">
     <title>skjema</title>
   </head>
-  <body>
+  <body style="background-color:#E1C4D6;" >
     <h1>Jeg skal teste ut litt koder</h1>
     <form action="registrere.html">
       <label>Navn:</label>
       <input type="text" name="fornavn" placeholder="Kari Nordmann" required>
       <label>Alder:</label>
-      <input type="number" name="alder" placeholder=""required>
-      <button type="submit">registrer navn og alder</button>
-      <input type="range" name="glider">
-      <button type="submit">Gli her</button>
-    </form>
+      <input type="number" name="alder" placeholder required>
+      <input type="radio" value="Brus" name="Brus"> <span>Brus</span>
+      <input type="radio" name="Pizza" value="mat"> <span>Pizza</span>
+      <input type="radio" name="Dessert" value="Kake"> <span>Kake</span>
+      <select name="velgMat" required>
+      <option value="">Hva slags pizza vil du ha?</option>
+      <option value="skinke">skinke</option>
+      <option value="peperoni">peperoni</option>
+      <option value="veg">vegetar</option>
+      <option value="marg">bare ost</option>
+      <option value="kjøtt">kjøttboller</option>
+      </select>
+  <button type="submit">ok, dette vil jeg ha</button>
+</form>
   </body>
 </html>

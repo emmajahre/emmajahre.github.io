@@ -1,0 +1,33 @@
+body{
+  background-color: #CCF0F8;
+  text-align: center;
+}
+h1{
+  width:auto;
+  padding:15px;
+  color:navy;
+  margin:20px;
+  font-style:italic;
+  font-size:50px;
+}
+main{
+  display: block;
+  width:auto;
+  border:5px;
+  color:#001646;
+  margin:30px;
+
+
+}
+footer{
+  display: block;
+  margin: auto;
+  font-size: 18px;
+  font-style: italic;
+  width:auto;
+  border:5px solid #3867D0;
+  margin:20px;
+}
+nav{
+  margin-bottom:40px;
+}

@@ -1,0 +1,28 @@
+header{
+  font-size: 40px;
+  font-style: bold;
+  font-stretch: expanded;
+  color: navy;
+  margin:auto;
+}
+nav{
+  display: block;
+  margin: left;
+  color: navy;
+}
+main{
+  display: block;
+  margin: auto;
+  color: lightblue;
+  font-size: 18px;
+  margin:10px;
+  border:solid;color:darkblue;
+}
+aside{
+  display: block;
+  margin: right;
+  font-size: 18px;
+}
+footer{
+  color: red;
+}

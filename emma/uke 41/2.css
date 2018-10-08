@@ -1,0 +1,36 @@
+body {
+  background-color: #00ccff;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin: 35px 25px 0px 25px;
+}
+p,h2{
+  padding: 10px;
+
+}
+p::first-letter{
+  font-size: 42px;
+  color: green;
+  font-weight: bold;
+}
+.toppen:hover{
+  background-color: yellow;
+}
+h1:hover{
+  font-size: 70px;
+}
+.toppen{
+  background-color: #3300cc;
+  color: #cccccc;
+}
+.bunn{
+  background-color: #cccccc;
+  color: #3300cc;
+}
+ul li{
+  background-color: lightgreen;
+  color: black;
+}
+ul::first-line{
+  background-color: darkgreen;
+}

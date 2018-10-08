@@ -1,0 +1,26 @@
+body{
+  background-color: #C3D0F6;
+  margin-left: 200px;
+}
+img{
+  widt:600px;
+  height: 400px;
+}
+h1{
+  font-style: bold italic;
+  color: #253668;
+}
+main{
+  display: block;
+  width:auto;
+  border:5px;
+}
+table{
+  padding: 40px;
+  display: block;
+  margin: auto;
+}
+nav{
+  margin: 40px;
+
+}

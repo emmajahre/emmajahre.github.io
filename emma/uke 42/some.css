@@ -1,0 +1,40 @@
+body{
+  text-align: left;
+  background-color: #F9FBFE;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+header{
+  margin:40px;
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+h2{
+  font-size: 25px;
+  color:navy;
+}
+spm:hover{
+  color: orange;
+}
+spm{
+  font-weight: bold;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+}
+ol,p{
+  line-height: 25px;
+}
+article{
+  background-color: lightblue;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}

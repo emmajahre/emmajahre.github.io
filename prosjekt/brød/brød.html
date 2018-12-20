@@ -2,11 +2,133 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Brød</title>
+    <link rel="stylesheet" type="text/css" href="..\css\look.css">
   </head>
-  <body>
-    <head>
-      BRØD
-    </head>
-  </body>
+    <body>
+      <nav>
+        <div class="rullned">
+          <button class="rullnedknapp">Produkter</button>
+          <div class="innholdrullned">
+            <a href="..\brød\brød.html">Brød</a>
+            <a href="..\rundstykker\rundstykker.html"> Rundstykker</a>
+            <a href="..\bakst\bakst.html">Bakst</a>
+          </div>
+        </div>
+
+        <a href="..\forside\hovedside.html">   <img id="logo" src="..\forside\forbilde\logo.jpg" alt="logo"> </a>
+        <a href="..\handlekurv\handlekurv.html"> <img id="kurv" src="..\forside\forbilde\handle.jpg" alt="handlekurv">  </a>
+
+      </nav>
+      <h2>BRØD</h2>
+      <main>
+        <div class="produktsidegrid">
+
+            <mat2>
+              <a href=".\innholdbrød\bondebrød.html">
+                <div class="kjøp">
+                   <img  src=".\brødbilder\brød1.png" alt="brød">
+              </a>
+                  <p id="prodtittel"> Bondebrød 60kr  </p>
+                  <form action="..\handlekurv\handlekurv.html"  id="antallkjøp"> <input type="number" name="bonde"> <button type="sumbit" name="button">Kjøp</button> </form>
+                </div>
+            </mat2>
+
+
+            <mat>
+              <a href=".\innholdbrød\kakubrød.html">
+                <div class="kjøp">
+                   <img  src=".\brødbilder\brød2.png" alt="brød">
+              </a>
+                  <p id="prodtittel"> Kakubrød 48kr </p>
+                  <form action="..\handlekurv\handlekurv.html" id="antallkjøp"> <input type="number" name="Kaku"> <button type="sumbit" name="button">Kjøp</button> </form>
+                </div>
+             </mat>
+
+
+             <mat4>
+               <a href=".\innholdbrød\chiabrød.html">
+                 <div class="kjøp">
+                   <img  src=".\brødbilder\brød3.png" alt="brød">
+               </a>
+                   <p id="prodtittel"> Chiabrød 40kr</p>
+                   <form action="..\handlekurv\handlekurv.html" id="antallkjøp"> <input type="number" name="chia"> <button type="sumbit" name="button">Kjøp</button> </form>
+                 </div>
+            </mat4>
+
+
+            <mat3>
+              <a href=".\innholdbrød\grovchia.html">
+                <div class="kjøp">
+                  <img  src=".\brødbilder\brød4.png" alt="brød">
+              </a>
+                  <p id="prodtittel"> Grovt Chiabrød 45kr</p>
+                  <form action="..\handkelekurv\handlekurv.html" id="antallkjøp"> <input type="number" name="grovchia"> <button type="sumbit" name="button">Kjøp</button> </form>
+                </div>
+            </mat3>
+
+
+            <mat3>
+              <a href=".\innholdbrød\franskland.html">
+                <div class="kjøp">
+                  <img  src=".\brødbilder\brød5.png" alt="brød">
+              </a>
+                  <p id="prodtittel"> Fransk Landbrød 40kr </p>
+                  <form action="..\handlekurv\handlekurv.html" id="antallkjøp"> <input type="number" name="fransk"> <button type="sumbit" name="button">Kjøp</button> </form>
+                </div>
+            </mat3>
+
+
+            <mat6>
+                <a href=".\innholdbrød\glutenfrisurdeig.html">
+                  <div class="kjøp">
+                    <img  src=".\brødbilder\brød6.png" alt="brød">
+                </a>
+                    <p id="prodtittel"> Glutenfritt surdeigsbrød 70kr </p>
+                    <form action="..\handlekurv\handlekurv.html" id="antallkjøp"> <input type="number" name="surdeig"> <button type="sumbit" name="button">Kjøp</button> </form>
+                  </div>
+            </mat6>
+
+
+            <mat5>
+              <a href=".\innholdbrød\glutensesam.html">
+                <div class="kjøp">
+                  <img  src=".\brødbilder\brød7.png" alt="brød">
+              </a>
+                  <p id="prodtittel"> Glutenfritt Sesambrød 35kr </p>
+                  <form action="..\handlekurv\handlekurv.html" id="antallkjøp"> <input type="number" name="sesam"> <button type="sumbit" name="button">Kjøp</button> </form>
+                </div>
+            </mat5>
+
+
+            <mat>
+              <a href=.\innholdbrød\grovmusli.html>
+                <div class="kjøp">
+                  <img  src=".\brødbilder\brød8.png" alt="brød">
+              </a>
+                  <p id="prodtittel"> Grovt muslibrød 50kr </p>
+                  <form action="..\handlekurv\handlekurv.html"  id="antallkjøp"> <input type="number" name="musli"> <button type="sumbit" name="button">Kjøp</button> </form>
+                </div>
+            </mat>
+
+
+          </div>
+      </main>
+
+      <p id="allergi">
+        *Alle brød inneholder gluten og laktose. De glutenfrie er fri for gluten og laktose. Kan inneholde spor av nøtter.
+      </p>
+
+      <footer>
+
+
+          <h1> Kontakt oss</h1>
+          <p id="innholdfooter">Svein Linussen AS</p>
+          <p id="innholdfooter">Møllergata 40c</p>
+          <p id="innholdfooter">morgenlevering@mail.no</p>
+          <p id="innholdfooter">tlf fra kl 4 til 13: 55667788</p>
+
+
+      </footer>
+    </body>
 </html>

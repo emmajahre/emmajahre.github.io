@@ -2,11 +2,100 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>forside</title>
+      <link rel="stylesheet" type="text/css" href="..\css\look.css">
   </head>
   <body>
-    <head>
-      handlekurv
-    </head>
+    <nav>
+      <div class="rullned">
+        <button class="rullnedknapp">Produkter</button>
+        <div class="innholdrullned">
+          <a href="..\brød\brød.html">Brød</a>
+          <a href="..\rundstykker\rundstykker.html"> Rundstykker</a>
+          <a href="..\bakst\bakst.html">Bakst</a>
+        </div>
+      </div>
+
+      <a href="..\forside\hovedside.html">   <img id="logo" src="..\forside\forbilde\logo.jpg" alt="logo"> </a>
+      <a href="..\handlekurv\handlekurv.html"> <img id="kurv" src="..\forside\forbilde\handle.jpg" alt="handlekurv">  </a>
+
+    </nav>
+    <main>
+      <h2>HANDLEKURV</h2>
+      <div class="dinhandlekurv">
+
+
+        <table id="handletabell">
+
+          <h3>Din ordre</h3>
+
+          <thead>
+            <tr>
+              <td id="produkt">Pizzabolle</td>
+              <td id="antall">3</td>
+              <td id="pris">45kr</td>
+            </tr>
+            <tr>
+              <td id="produkt">Bringebærmuffins</td>
+              <td id="antall">2</td>
+              <td id="pris">35kr</td>
+            </tr>
+            <tr>
+              <td id="produkt">Kakubrød</td>
+              <td id="antall">1</td>
+              <td id="pris">48kr</td>
+            </tr>
+            <tr>
+              <td id="frakt">Frakt</td>
+              <td id="frakt"> </td>
+              <td id="frakt">Alltid gratis</td>
+            </tr>
+            <tr>
+              <td id="totalsum">Totalsum</td>
+              <td id="totalsum"> </td>
+              <td id="totalsum">253kr</td>
+            </tr>
+          </thead>
+
+        </table>
+        <h3>Leveringsdetaljer</h3>
+
+        <div class="kontaktinfo">
+
+          <form action="..\ferdig\takk.html">
+            <label>Adresse:</label>
+            <input type="text" name="adresse" placeholder="Legg til adresse" required id="kontaktopplysning">
+
+
+          <form action="..\ferdig\takk.html">
+            <label>Dato:</label>
+            <input type="text" name="fornavn" placeholder="dd.mm.åå" required id="kontaktopplysning">
+
+
+          <form action="..\ferdig\takk.html">
+            <label>Navn:</label>
+            <input type="text" name="fornavn" placeholder="22334455" required id="kontaktopplysning">
+
+
+          <button type="submit" id="bestill">Bestill!</button>
+
+          </form>
+
+        </div>
+
+
+      </div>
+    </main>
+    <footer>
+
+
+        <h1> Kontakt oss</h1>
+        <p id="innholdfooter">Svein Linussen AS</p>
+        <p id="innholdfooter">Møllergata 40c</p>
+        <p id="innholdfooter">morgenlevering@mail.no</p>
+        <p id="innholdfooter">tlf fra kl 4 til 13: 55667788</p>
+
+
+    </footer>
   </body>
 </html>

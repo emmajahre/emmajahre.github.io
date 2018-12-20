@@ -1,0 +1,319 @@
+body{
+  text-align: center;
+  max-width: 1200px;
+  background-color:white;
+  margin: auto;
+  margin-top: 120px;
+}
+p,img{
+  width: 100%;
+}
+
+
+/*NAVIGASJONSBAR*/
+nav{
+  border-bottom: 1px solid darkgrey;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-top:0px;
+  padding: 15px;
+  position: fixed;
+  width: 1170px;
+  top: 0;
+  background-color: white;
+  display: grid;
+  grid-template-columns:1fr 8fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap:50px;
+}
+.rullnedknapp {
+  background-color: #F6D856;
+  color: black;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.rullned {
+  position: relative;
+  display: inline-block;
+}
+.innholdrullned {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+.innholdrullned a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  width: 170px;
+}
+.innholdrullned a:hover {font-weight: bold;}
+
+.rullned:hover .innholdrullned {display: block;}
+
+.rullned:hover .rullnedknapp {font-weight:normal;}
+#kurv{
+  width: auto;
+  margin-top: 15px;
+  width: 80px;
+}
+#logo{
+  width:180px;
+  height: 70px;
+  margin-right: 45%;
+  margin-top: 9px;
+}
+
+
+
+/*HOVEDSIDE*/
+main{
+  text-align: center;
+}
+.slagord{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap:15px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+#slagord1{
+  grid-column: 2/4;
+  margin-top: 10px;
+}
+#slagord2{
+  grid-column: 5/7;
+  margin-top: 10px;
+}
+#slagord3{
+  grid-column: 8/10;
+  margin-top: 10px;
+  margin-left:-6px;
+}
+#punch{
+  width: 100px;
+  height: 80px;
+}
+.kategorierforside{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap:50px;
+  margin-top: 100px;
+ }
+
+
+
+/*SIDE FOR HVER KATEGORI(bakst/brød/rundst)*/
+.produktsidegrid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap:15px;
+}
+  /*disse p-ene gir bakgrunnsfarge til png bilder*/
+h2{
+  margin-bottom: 150px;
+  margin-top:250px;
+  font-size: 70px;
+}
+.kjøp{
+  border: 1px solid darkgrey;
+  }
+.kjøp:hover{
+  box-shadow: 6px 6px 3px lightgrey;
+}
+mat{
+  background-color: #F7CAC9;
+}
+mat2{
+  background-color:#f5f3ce;
+}
+mat3{
+  background-color:#D2E0E1;
+}
+mat4{
+  background-color: #e3eaa7;
+}
+mat5{
+  background-color: #F6D856;
+}
+mat6{
+  background-color: #A7C5DF;
+}
+#prodtittel{
+  background-color: white;
+  color: black;
+  margin: 0px;
+  margin-top: 10px;
+  padding-top: 40px;
+  border-top: 1px solid grey;
+}
+#antallkjøp{
+  background-color: white;
+  padding:30px;
+  margin: 0px;
+}
+input{
+  border: none;
+}
+button{
+  border: none;
+  background-color: white;
+}
+/* prodtittel og antallkjøp måtte med
+  fordi dette ordna bakgrunnfargen
+  bak hvert produkt.
+  de er bare hvite bokser*/
+#allergi{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+/*er fult klar over at linjene nå hopper et hakk inn...
+ta så lang tid å fikse..., men vet at det ikke skal være sånn
+klokka er 22.40.....*/
+
+  /*SIDE FOR HVERT ENKELT PRODUKT*/
+  #innholdsbilde{
+    width: 919px;
+    height:531px;
+    margin-top: 20px;
+  }
+  .innholdperprodukt{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column-gap: 15px;
+    grid-row-gap:0px;
+    text-align: left;
+    margin-top: 20px;
+    margin: auto;
+    width: 919px;
+  }
+  .boks{
+    text-align: right;
+    font-weight: bold;
+    margin-right: 12%
+  }
+  #kjøpinput{
+    font-size: 20px;
+    width: 40px;
+  }
+  #kjøpbutton{
+    font-size: 30px;
+    color:#F6D856;
+  }
+  h3{
+    font-size: 30px;
+  }
+  #p-innhold{
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  #næringstabell{
+    font-size: 20px;
+  }
+  #næring{
+    padding-right: 90px;
+  }
+
+
+
+  /*HANDLEKURV*/
+  .dinhandlekurv{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column-gap: 15px;
+    grid-row-gap:20px;
+    text-align: left;
+    margin-top: 20px;
+    margin: auto;
+    width: 919px;
+  }
+  #handletabell{
+    font-size: 40px;
+    text-align: left;
+    border: 1px solid lightgrey;
+    padding: 30px;
+  }
+  #produkt{
+    padding-right: 40px;
+    border-bottom: 1px solid grey;
+  }
+  #antall{
+    padding-right: 200px;
+    border-bottom: 1px solid grey;
+  }
+  #pris{
+    border-bottom: 1px solid grey;
+  }
+  #frakt{
+    color: lightgrey;
+  }
+  #totalsum
+  {
+    font-weight: bold;
+  }
+  .kontaktinfo{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column-gap: 0px;
+    grid-row-gap:15px;
+    font-size: 30px;
+  }
+  #kontaktopplysning{
+    font-size: 20px;
+    width: 175px;
+  }
+  #bestill{
+    text-align: right;
+    font-size: 60px;
+    margin-left: 68%;
+    margin-top: 20px;
+    background-color:#F6D856 ;
+  }
+
+
+  /*TAKK FOR KJØPET*/
+  .takk{
+    font-size: 120px;
+    text-align: center;
+    padding: 120px;
+    padding-bottom: 400px;
+  }
+
+
+  /*FOOTER*/
+  footer{
+    font-weight: lighter;
+    font-style: italic;
+    color: darkgrey;
+    text-align: center;
+    margin-top: 100px;
+    border-top: 1px solid darkgrey;
+    margin-bottom: 70px;
+    padding-top: 30px;
+  }
+  h1{
+    font-size: 40px;
+    margin-top: auto;
+    font-weight: lighter;
+  }
+  #innholdfooter{
+    font-size: 20px;
+    margin-bottom: -10px;
+  }

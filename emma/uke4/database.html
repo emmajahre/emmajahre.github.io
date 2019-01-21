@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- Javascript som kobler siden vår til en firebase server, Du trenger din egen kode her!! -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC5b_GQKnQ58WO9TC5QcPFjYmUp9pKPaBQ",
+    authDomain: "emz1-99b54.firebaseapp.com",
+    databaseURL: "https://emz1-99b54.firebaseio.com",
+    projectId: "emz1-99b54",
+    storageBucket: "",
+    messagingSenderId: "51861113100"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script>
+      const db = firebase.database();
+      const kontaktliste = db.ref("kontaktliste")
+      kontaktliste.push(
+      {"ID":{
+        "navn":"Hedvig skorge",
+        "addresse"; "Konvallvein 16",
+        "alder":18,
+        "skole": "sandvika vgs"
+      }
+    }
+      )
+      kontaktliste.push(
+        {"ID":{
+          "navn":"Emma Jahre",
+          "addresse"; "Helsethagan 59",
+          "alder":17,
+          "skole": "sandvika vgs"
+        }
+      }
+      )
+    </script>
+
+  </body>
+</html>

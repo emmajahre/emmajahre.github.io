@@ -53,6 +53,8 @@
 
             jakker.on("child_added",visVare); // Samme som spørrefunksjonen over, bare med jakker.
 
+            bukser.on("child_added",visVare);
+
 
             // Spørring som sorterer sko etter pris, laveste først
             sko
@@ -71,6 +73,17 @@
                 .startAt(1800)
                 .endAt(2200)
                 .on("child_added",visVare);
+
+            bukser
+            .orderByChild("merke")
+            .limitToFirst(1)
+            .on("child_added",visVare);
+
+            jakker
+            .orderByChild("merke")
+            .startAt(P)
+            .on("child_added", visVare)
+
         </script>
     </body>
 </html>

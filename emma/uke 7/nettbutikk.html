@@ -76,12 +76,12 @@
 
             bukser
             .orderByChild("merke")
-            .limitToFirst(1)
+            .limitToFirst("1")
             .on("child_added",visVare);
 
             jakker
             .orderByChild("merke")
-            .startAt(P)
+            .startAt("P")
             .on("child_added", visVare)
 
         </script>

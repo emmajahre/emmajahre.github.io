@@ -26,38 +26,5 @@
                 "modell":"Expedition Jacket",
                 "pris":2800,
                 "bilde":"northsupreme.jpg"
-            },
-            "jakke002":{
-                "merke":"Parajumpers",
-                "modell":"longbear",
-                "pris":8700,
-                "bilde":"longbear.jpg"
-            },
-            "jakke003":{
-                "merke":"Pajar",
-                "modell":"Panter Jacket",
-                "pris":6800,
-                "bilde":"pantherpajar.jpg"
             }
-    },
-    "bukser":{
-        "bukse001":{
-            "merke":"Zara",
-            "modell":"Flared jeans",
-            "pris":400,
-            "bilde":"flarezara.jpg"
-        },
-        "bukse002":{
-            "merke":"Zara",
-            "modell":"Straight jeans",
-            "pris":400,
-            "bilde":"straightzara.jpg"
-        },
-        "bukse003":{
-            "merke":"Zara",
-            "modell":"Patterned pants",
-            "pris":500,
-            "bilde":"patternedzara.jpg"
-        }
-      }
 }

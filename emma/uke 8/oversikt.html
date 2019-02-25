@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nettbutikk</title>
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAQsbmThsTS_g89lVgSb-W8YxgOPdfBa5c",
+            authDomain: "land-bff1b.firebaseapp.com",
+            databaseURL: "https://land-bff1b.firebaseio.com",
+            projectId: "land-bff1b",
+            storageBucket: "land-bff1b.appspot.com",
+            messagingSenderId: "511437430845"
+          };
+          firebase.initializeApp(config);
+        </script>
+      </head>
+
+ <body>
+   <header>
+     <nav>
+       <button onclick="visAlle()">Alle land</button>
+       <button onclick="visEuropa()">Europa</button>
+       <button onclick="visAsia()">Asia</button>
+       <button onclick="visAfrika()">Afrika</button>
+
+
+
+     </nav>
+   </header>
+   <main>
+
+   </main>
+
+   <script>
+       const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+         // Referanser til databasen
+       const db = firebase.database();
+       const country = db.ref("country"); // Referer til alt som ligger under sko i databasen
+       function visCountry(snapshot){
+             //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+           console.log(snapshot.val());
+           let land = snapshot.val();
+           main.innerHTML +=`
+               <article class="country">
+                 <h1>${pokeSnap.Name}</h1>
+                 <img src="${land.countryName}" alt="">
+                 <p>${land.countryCode} - ${land.continentName}</p>
+               </article>
+           `
+       }
+       function visAlle(){
+         main.innerHTML = ``
+         country.on("child_added",visCountry);
+       }
+       function visEuropa(){
+         main.innerHTML = ``
+         country
+           .orderByChild("continentName")
+           .equalTo("Europe")
+           .on("child_added",visCountry);
+       }
+       function visAsia(){
+         main.innerHTML = ``
+         country
+           .orderByChild("continentName")
+           .equalTo("Asia")
+           .on("child_added",visCountry);
+       }
+       }
+       function visAfrika(){
+         main.innerHTML = ``
+         country
+           .orderByChild("countryName")
+           .equalTo("Africa")
+           .on("child_added",visCountry);
+       }
+   </script>
+
+ </body>
+</html>

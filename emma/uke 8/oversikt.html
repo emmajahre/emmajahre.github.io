@@ -27,6 +27,8 @@
        <button onclick="visEuropa()">Europa</button>
        <button onclick="visAsia()">Asia</button>
        <button onclick="visAfrika()">Afrika</button>
+       <button onclick="visHøyest()">Størst befolket</button>
+       <button onclick="visLavest()">Lavest befolket</button>
 
 
 
@@ -41,18 +43,33 @@
          // Referanser til databasen
        const db = firebase.database();
        const country = db.ref("country"); // Referer til alt som ligger under sko i databasen
+
+
        function visCountry(snapshot){
              //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
-           console.log(snapshot.val());
+
            let land = snapshot.val();
            main.innerHTML +=`
                <article class="country">
-                 <h1>${pokeSnap.Name}</h1>
-                 <img src="${land.countryName}" alt="">
+                 <h1>${land.countryName}</h1>
                  <p>${land.countryCode} - ${land.continentName}</p>
+                 <p>Befolkning: ${land.population}</p>
                </article>
            `
        }
+
+       function visPopulation(snapshot){
+             //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+
+           let folk = snapshot.val();
+           main.innerHTML +=`
+               <article class="country">
+                 <h1>${folk.population}</h1>
+                 <p>${folk.countryName} - ${folk.continentName}</p>
+               </article>
+           `
+       }
+
        function visAlle(){
          main.innerHTML = ``
          country.on("child_added",visCountry);
@@ -71,14 +88,26 @@
            .equalTo("Asia")
            .on("child_added",visCountry);
        }
-       }
        function visAfrika(){
          main.innerHTML = ``
          country
-           .orderByChild("countryName")
+           .orderByChild("continentName")
            .equalTo("Africa")
            .on("child_added",visCountry);
        }
+       function visHøyest(){
+         main.innerHTML = ``
+         country
+           .orderByChild("population")
+           .on("child_added",visPopulation);
+       }
+       
+       country
+           .orderByChild("countryName")
+           .limitToFirst(20)
+           .startAt("A")
+           .endAt("B")
+           .on("child_added",visCountry);
    </script>
 
  </body>

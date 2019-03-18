@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nettbutikk</title>
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAoeds4A1ivewTQtMpqjqBbACWgrGmlS-A",
+            authDomain: "venner-64e5b.firebaseapp.com",
+            databaseURL: "https://venner-64e5b.firebaseio.com",
+            projectId: "venner-64e5b",
+            storageBucket: "venner-64e5b.appspot.com",
+            messagingSenderId: "464780376531"
+          };
+          firebase.initializeApp(config);
+        </script>
+    </head>
+    <body>
+      <header>
+        <nav>
+          <button onclick="visJenter()">Jentevenner</button>
+        </nav>
+      </header>
+        <main>
+
+        </main>
+        <script>
+
+        const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+
+        // Referanser til databasen
+        const db = firebase.database();
+        const sko = db.ref("Venner/jenter"); // Referer til alt som ligger under sko i databasen
+        const jakker = db.ref("Venner/gutter"); // Referer til alt som ligger under jakker i databasen
+
+        function visNavn(snapshot){
+            //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+            let navn = snapshot.val();
+            main.innerHTML +=`
+                <article class="navn">
+                    <h1>${navn.navn} - ${navn.født}</h1>
+                    <p>Adresse: ${navn.gatenavn}</p>
+
+                </article>
+
+
+            `
+        }
+
+        function visGatenavn(){
+          gatenavn
+          .orderByChild("gatenavn")
+          .on("child_added", visNavn)
+        }
+
+
+        function visJenter(){
+          main.innerHTML=""
+          jenter
+            .orderByChild("navn")
+            .on("child_added", visNavn)
+        }
+
+        </script>
+
+    </body>
+</html>

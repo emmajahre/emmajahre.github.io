@@ -1,4 +1,5 @@
-"Venner":{
+{
+  "Venner":{
     "jenter":{
         "ClaraRaaum":{
             "navn":"Clara",
@@ -6,8 +7,9 @@
             "likerkatter":true,
             "bosted":{
               "gatenavn":"linderudveien",
-              "gatenummer":29,
-              }
+              "gatenummer":29
+              },
+            "hobby":"fotball"
         },
         "SelmaJobraaten":{
             "navn":"Selma",
@@ -15,8 +17,9 @@
             "likerkatter":true,
             "bosted":{
               "gatenavn":"Skarvaveien",
-              "gatenummer":102,
-            }
+              "gatenummer":102
+            },
+          "hobby":"fotball"
         },
         "SofieBoilesen":{
             "navn":"Sofie",
@@ -24,8 +27,9 @@
             "likerkatter":false,
             "bosted":{
               "gatenavn":"nedre guldbrandlia",
-              "gatenummer":45,
-            }
+              "gatenummer":45
+            },
+          "hobby":"fotball"
         },
     },
     "gutter":{
@@ -35,8 +39,9 @@
           "likerkatter":false,
           "bosted":{
             "gatenavn":"linderudlia",
-            "gatenummer":13,
-            }
+            "gatenummer":13
+            },
+          "hobby":"fotball"
       },
       "OscarJahre":{
           "navn":"Oscar",
@@ -44,8 +49,9 @@
           "likerkatter":true,
           "bosted":{
             "gatenavn":"bergensveien",
-            "gatenummer":55,
-            }
+            "gatenummer":55
+          },
+          "hobby":"fotball"
       },
       "AkselHaukaas":{
           "navn":"Aksel",
@@ -53,8 +59,9 @@
           "likerkatter":false,
           "bosted":{
             "gatenavn":"helsetdammen",
-            "gatenummer":32,
-            }
-      },
+            "gatenummer":32
+          },
+          "hobby":"fotball"
+      }
     }
-  }
+  }}

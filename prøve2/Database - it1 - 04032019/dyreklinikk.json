@@ -6,70 +6,80 @@
         "Bilde" : "hund1.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "",
-        "Navn" : "Fido"
+        "Navn" : "Fido",
+        "sykdom":"denne er syk"
       },
       "H002" : {
         "Alder" : 3,
         "Bilde" : "hund2.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "Beige",
-        "Navn" : "Ruffen"
+        "Navn" : "Ruffen",
+        "sykdom":"denne er syk"
       },
       "H003" : {
         "Alder" : 6,
         "Bilde" : "hund3.jpg",
         "Farge1" : "Beige",
         "Farge2" : "",
-        "Navn" : "Charlie"
+        "Navn" : "Charlie",
+        "sykdom":"denne er syk"
       },
       "H004" : {
         "Alder" : 9,
         "Bilde" : "hund4.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "Brun",
-        "Navn" : "Trofast"
+        "Navn" : "Trofast",
+        "sykdom":"denne er syk"
       },
       "H005" : {
         "Alder" : 11,
         "Bilde" : "hund5.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "",
-        "Navn" : "Tassen"
+        "Navn" : "Tassen",
+        "sykdom":"denne er syk"
       },
       "H006" : {
         "Alder" : 8,
         "Bilde" : "hund6.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "Svart",
-        "Navn" : "Bastian"
+        "Navn" : "Bastian",
+        "sykdom":"denne er syk"
       },
       "H007" : {
         "Alder" : 8,
         "Bilde" : "hund7.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "Brun",
-        "Navn" : "Ruffen"
+        "Navn" : "Ruffen",
+        "sykdom":"denne er syk"
       },
       "H008" : {
         "Alder" : 6,
         "Bilde" : "hund8.jpg",
         "Farge1" : "Svart",
         "Farge2" : "Hvit",
-        "Navn" : "Tarzan"
+        "Navn" : "Tarzan",
+        "sykdom":"denne er syk"
       },
       "H009" : {
         "Alder" : 10,
         "Bilde" : "hund9.jpg",
         "Farge1" : "Brun",
         "Farge2" : "",
-        "Navn" : "Luna"
+        "Navn" : "Luna",
+        "sykdom":"denne er syk"
       },
       "H010" : {
         "Alder" : 7,
         "Bilde" : "hund10.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "Svart",
-        "Navn" : "Bella"
+        "Navn" : "Bella",
+        "sykdom":"denne er syk"
       }
     },
     "Katter" : {
@@ -78,70 +88,80 @@
         "Bilde" : "katt1.jpg",
         "Farge1" : "Grå",
         "Farge2" : "Hvit",
-        "Navn" : "Milly"
+        "Navn" : "Milly",
+        "sykdom":"denne er syk"
       },
       "K002" : {
         "Alder" : 4,
         "Bilde" : "katt2.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "Beige",
-        "Navn" : "Simba"
+        "Navn" : "Simba",
+        "sykdom":"denne er syk"
       },
       "K003" : {
         "Alder" : 7,
         "Bilde" : "katt3.jpg",
         "Farge1" : "Grå",
         "Farge2" : "",
-        "Navn" : "Pus"
+        "Navn" : "Pus",
+        "sykdom":"denne er syk"
       },
       "K004" : {
         "Alder" : 4,
         "Bilde" : "katt4.jpg",
         "Farge1" : "Grå",
         "Farge2" : "Hvit",
-        "Navn" : "Sofus"
+        "Navn" : "Sofus",
+        "sykdom":"denne er syk"
       },
       "K005" : {
         "Alder" : 2,
         "Bilde" : "katt5.jpg",
         "Farge1" : "Grå",
         "Farge2" : "Hvit",
-        "Navn" : "Mira"
+        "Navn" : "Mira",
+        "sykdom":"denne er syk"
       },
       "K006" : {
         "Alder" : 12,
         "Bilde" : "katt6.jpg",
         "Farge1" : "Grå",
         "Farge2" : "",
-        "Navn" : "Mille"
+        "Navn" : "Mille",
+        "sykdom":"denne er syk"
       },
       "K007" : {
         "Alder" : 7,
         "Bilde" : "katt7.jpg",
         "Farge1" : "Grå",
         "Farge2" : "",
-        "Navn" : "Mons"
+        "Navn" : "Mons",
+        "sykdom":"denne er syk"
       },
       "K008" : {
         "Alder" : 4,
         "Bilde" : "katt8.jpg",
         "Farge1" : "Hvit",
         "Farge2" : "Brun",
-        "Navn" : "Nusse"
+        "Navn" : "Nusse",
+        "sykdom":"denne er syk"
       },
       "K009" : {
         "Alder" : 3,
         "Bilde" : "katt9.jpg",
         "Farge1" : "Beige",
         "Farge2" : "Hvit",
-        "Navn" : "Mia"
+        "Navn" : "Mia",
+        "sykdom":"denne er syk"
       },
       "K010" : {
         "Alder" : 13,
         "Bilde" : "katt10.jpg",
         "Farge1" : "Brun",
         "Farge2" : "",
-        "Navn" : "Tigergutt"
+        "Navn" : "Tigergutt",
+        "sykdom":"denne er syk"
       }
     }
   }

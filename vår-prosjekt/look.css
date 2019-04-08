@@ -2,6 +2,7 @@ body{
   margin-left: 3%;
   margin-right: 3%;
   text-align: center;
+  text-decoration: none; /*FÅR IKKE BORT UNDERSTREK PÅ LINK*/
 }
 img{
   width:100%;
@@ -31,21 +32,21 @@ main{
 }
 #vår19tekst{
   grid-column: 4/5;
-  font-size: 70px;
+  font-size: 220px;
 }
 #fest{
-  grid-column:  3/5;
+  grid-column:  2/5;
 }
 #festtekst{
-  grid-column: 2/3;
-  font-size: 70px;
+  grid-column: 1/2;
+  font-size: 220px;
 }
 #grønn{
   grid-column:  1/3;
 }
 #grønntekst{
   grid-column: 3/5;
-  font-size: 70px;
+  font-size: 220px;
 }
 @media (max-width: 2500px){
     main{
@@ -66,21 +67,21 @@ main{
     }
     #vår19tekst{
       grid-column: 3/4;
-      font-size: 70px;
+      font-size: 160px;
     }
     #fest{
       grid-column:  2/4;
     }
     #festtekst{
       grid-column: 1/2;
-      font-size: 70px;
+      font-size: 160px;
     }
     #grønn{
-      grid-column:  1/2;
+      grid-column:  1/3;
     }
     #grønntekst{
-      grid-column: 2/4;
-      font-size: 70px;
+      grid-column: 3/4;
+      font-size: 160px;
     }
 }
 
@@ -99,25 +100,25 @@ main{
     border-bottom: 1px solid darkgrey;
   }
   #vår19{
-    grid-column:  1/4;
+    grid-column:  1/3;
   }
   #vår19tekst{
-    grid-column: 2/4;
-    font-size: 70px;
+    grid-column: 3/4;
+    font-size: 100px;
   }
   #fest{
-    grid-column:  1/4;
+    grid-column:  2/4;
   }
   #festtekst{
-    grid-column: 1/4;
-    font-size: 70px;
+    grid-column: 1/2;
+    font-size: 100px;
   }
   #grønn{
-    grid-column:  1/2;
+    grid-column:  1/3;
   }
   #grønntekst{
-    grid-column: 2/3;
-    font-size: 70px;
+    grid-column: 3/4;
+    font-size: 100px;
   }
 }
 @media (max-width: 1100px){
@@ -137,28 +138,29 @@ main{
     border-bottom: 1px solid darkgrey;
   }
   #vår19{
-    grid-column:  1/2;
+    grid-column:  1/3;
   }
-  #vår19tekst{
-    grid-column: 2/2;
-    font-size: 70px;
+  #vår19tekst{ /*får ikke vårtekst eller festtekst til å dekke grid 1/3,
+    slik bildene deres gjør*/
+    grid-column: 1/3;
+    font-size: 60px;
     font-style: none;
     text-decoration: none;
     color: black;
   }
   #fest{
-    grid-column:  2/2;
+    grid-column:  1/3;
   }
   #festtekst{
-    grid-column: 1/1;
-    font-size: 70px;
+    grid-column: 1/3;
+    font-size: 60px;
   }
   #grønn{
     grid-column:  1/2;
   }
   #grønntekst{
     grid-column: 2/3;
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 .medium{
@@ -169,14 +171,14 @@ main{
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-/* Slideshow container */
+
 .slideshow-container {
   max-width: 70%;
   position: relative;
   margin: auto;
 }
 
-/* Caption text */
+
 .text {
   color: #f2f2f2;
   font-size: 80px;
@@ -187,7 +189,7 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;

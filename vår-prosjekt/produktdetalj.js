@@ -1,3 +1,4 @@
+/*DENNE SIDEN HAR JEG IKKE KOBLET OPP MOT NETTSIDEN IGJEN*/
 let bildecontainer = document.querySelector("#bildecontainer")
 let sykdom = document.querySelector("#sykdom")
 

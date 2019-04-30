@@ -56,29 +56,31 @@
 </div>
 
 
-      <nav>
+      <nav id="navigator">
         <p><a href="hovedside.html">Til forsiden</a></p>
-        <button onclick="VisGensere()">Gensere</button>
+      <a href="#navigator" <button onclick="VisGensere()">Gensere</button> </a>
         <button onclick="VisTopper()">Topper</button>
         <button onclick="VisBukser()">Bukser</button>
         <button onclick="VisSkjort()">Skjørt</button><!-- Gjør ferdig knappene og koblingene her-->
         <button onclick="VisKjoler()">Kjoler</button>
 
       </nav>
+
     </header>
     <main>
 
 
-      <a id="vår19" href="vårkolleksjon.html">  <img  src="andrebilder/spring2019.jpg"> </a>
-      <a href="vårkolleksjon.html"> <p id="vår19tekst"> Kjøp årets vårmote her!</p></a>
+
+    <div id="vår19" onclick="VisVår"> <img src="andrebilder/spring2019.jpg"> </div>
+     <p id="vår19tekst"> Kjøp årets vårmote her!</p>
 
 
-      <a  href="fest.html"> <p id="festtekst">Bli den hotteste på festen!</p> </a>
-      <a id="fest" href="fest.html">  <img  src="andrebilder/fest.jpg"> </a>
+     <p id="festtekst">Bli den hotteste på festen!</p>
+      <div id="fest" onclick=VisFest>  <img  src="andrebilder/fest.jpg"> </div>
 
 
-      <a id="grønn" href="sesongensfarge.html">  <img  src="andrebilder/grønn.jpg"> </a>
-      <a href="sesongensfarge.html"> <p id="grønntekst">Kle deg i sesongens lekretse farge!</p> </a>
+      <div id="grønn" onclick="VisGrønn">  <img  src="andrebilder/grønn.jpg"> </div>
+      <p id="grønntekst">Kle deg i sesongens lekretse farge!</p>
 
 
     </main>
@@ -150,6 +152,100 @@ function showSlides() {
           main.innerHTML=" " ;
           kjoler.on("child_added",VisVarer);
       }
+
+      function VisVår() {
+        main.innerHTML=" ";
+        genser
+          .orderByChild("sesong")
+          .equalTo("spring19")
+          .on("child_added",VisVarer);
+        topper
+          .orderByChild("sesong")
+          .equalTo("spring19")
+          .on("child_added",VisVarer);
+        bukser
+          .orderByChild("sesong")
+          .equalTo("spring19")
+          .on("child_added",VisVarer);
+        skjort
+          .orderByChild("sesong")
+          .equalTo("spring19")
+          .on("child_added",VisVarer);
+        kjoler
+          .orderByChild("sesong")
+          .equalTo("spring19")
+          .on("child_added",VisVarer);
+      }
+
+      function VisFest() {
+        main.innerHTML=" ";
+        genser
+          .orderByChild("anledning")
+          .equalTo("fest")
+          .on("child_added",VisVarer);
+        topper
+          .orderByChild("anledning")
+          .equalTo("fest")
+          .on("child_added",VisVarer);
+        bukser
+          .orderByChild("anledning")
+          .equalTo("fest")
+          .on("child_added",VisVarer);
+        skjort
+          .orderByChild("anledning")
+          .equalTo("fest")
+          .on("child_added",VisVarer);
+        kjoler
+          .orderByChild("anledning")
+          .equalTo("fest")
+          .on("child_added",VisVarer);
+      }
+
+      function VisGrønn() {
+        main.innerHTML=" ";
+        genser
+          .orderByChild("farge1")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        topper
+          .orderByChild("farge1")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        bukser
+          .orderByChild("farge1")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        skjort
+          .orderByChild("farge1")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        kjoler
+          .orderByChild("farge1")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        genser
+          .orderByChild("farge2")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        topper
+          .orderByChild("farge2")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        bukser
+          .orderByChild("farge2")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        skjort
+          .orderByChild("farge2")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+        kjoler
+          .orderByChild("farge2")
+          .equalTo("grønn")
+          .on("child_added",VisVarer);
+
+      }
+
 
     </script>
 

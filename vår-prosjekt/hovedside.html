@@ -67,187 +67,21 @@
       </nav>
 
     </header>
+
+
     <main>
-
-
-
-    <div id="vår19" onclick="VisVår"> <img src="andrebilder/spring2019.jpg"> </div>
-     <p id="vår19tekst"> Kjøp årets vårmote her!</p>
-
-
-     <p id="festtekst">Bli den hotteste på festen!</p>
-      <div id="fest" onclick=VisFest>  <img  src="andrebilder/fest.jpg"> </div>
-
-
-      <div id="grønn" onclick="VisGrønn">  <img  src="andrebilder/grønn.jpg"> </div>
-      <p id="grønntekst">Kle deg i sesongens lekretse farge!</p>
-
-
+      <h1 id="insp">INSPO</h1>
+      <div class="insprierendeBilder">
+        <img id="inspo1" src="andrebilder\inspo1.jpg">
+        <img id="inspo2" src="andrebilder\inspo2.jpg">
+        <img id="inspo3" src="andrebilder\inspo3.jpg">
+        <img id="inspo5" src="andrebilder\inspo4.jpg">
+      </div>
     </main>
 
-    <script>
-
-    var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 
 
-      const main = document.querySelector("main");
-      const db = firebase.database();
-      const genser = db.ref("varer/genser");
-      const topper = db.ref("varer/topper");
-      const bukser = db.ref("varer/bukser");
-      const skjort = db.ref("varer/skjørt");
-      const kjoler = db.ref("varer/kjole");
-
-      function VisVarer (snapshot){
-        let varer = snapshot.val();
-        main.innerHTML +=`
-            <article class="Varer">
-              <h1>${varer.navn}</h1>
-              <img src="bilder/${varer.bilde}" alt="">
-              <p> ${varer.type}, ${varer.stoff}</p>
-            </article>
-        `
-      }
-
-
-      function VisGensere() {
-          main.innerHTML=" " ;
-          genser.on("child_added",VisVarer);
-      }
-
-      function VisTopper() {
-          main.innerHTML=" " ;
-          topper.on("child_added",VisVarer);
-      }
-
-      function VisBukser() {
-          main.innerHTML=" " ;
-          bukser.on("child_added",VisVarer);
-      }
-
-      function VisSkjort() {
-          main.innerHTML=" " ;
-          skjort.on("child_added",VisVarer);
-      }
-
-      function VisKjoler() {
-          main.innerHTML=" " ;
-          kjoler.on("child_added",VisVarer);
-      }
-
-      function VisVår() {
-        main.innerHTML=" ";
-        genser
-          .orderByChild("sesong")
-          .equalTo("spring19")
-          .on("child_added",VisVarer);
-        topper
-          .orderByChild("sesong")
-          .equalTo("spring19")
-          .on("child_added",VisVarer);
-        bukser
-          .orderByChild("sesong")
-          .equalTo("spring19")
-          .on("child_added",VisVarer);
-        skjort
-          .orderByChild("sesong")
-          .equalTo("spring19")
-          .on("child_added",VisVarer);
-        kjoler
-          .orderByChild("sesong")
-          .equalTo("spring19")
-          .on("child_added",VisVarer);
-      }
-
-      function VisFest() {
-        main.innerHTML=" ";
-        genser
-          .orderByChild("anledning")
-          .equalTo("fest")
-          .on("child_added",VisVarer);
-        topper
-          .orderByChild("anledning")
-          .equalTo("fest")
-          .on("child_added",VisVarer);
-        bukser
-          .orderByChild("anledning")
-          .equalTo("fest")
-          .on("child_added",VisVarer);
-        skjort
-          .orderByChild("anledning")
-          .equalTo("fest")
-          .on("child_added",VisVarer);
-        kjoler
-          .orderByChild("anledning")
-          .equalTo("fest")
-          .on("child_added",VisVarer);
-      }
-
-      function VisGrønn() {
-        main.innerHTML=" ";
-        genser
-          .orderByChild("farge1")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        topper
-          .orderByChild("farge1")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        bukser
-          .orderByChild("farge1")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        skjort
-          .orderByChild("farge1")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        kjoler
-          .orderByChild("farge1")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        genser
-          .orderByChild("farge2")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        topper
-          .orderByChild("farge2")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        bukser
-          .orderByChild("farge2")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        skjort
-          .orderByChild("farge2")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-        kjoler
-          .orderByChild("farge2")
-          .equalTo("grønn")
-          .on("child_added",VisVarer);
-
-      }
-
-
-    </script>
+    <script src="hovedside.js"></script>
 
   </body>
 </html>

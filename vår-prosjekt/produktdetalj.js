@@ -14,8 +14,9 @@ function genererHTML(snapshot){
   let varer = snapshot.val();
   main.innerHTML = `
   <article class="infovarer">
-    <h1>${varer.navn}</h1>
-    <img src="bilder/${varer.bilde}">
+    <h1 id="produktNavn">${varer.navn}</h1>
+    <p id="produktPris">${varer.pris} kr </p>
+    <img id="produktBilde" src="bilder/${varer.bilde}">
     <form action="handlekurv.html">
                   <select required name="">
                     <option class="str" value="">${varer.navn}</option>

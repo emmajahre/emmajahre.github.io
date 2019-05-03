@@ -6,6 +6,7 @@
   const skjort = db.ref("varer/skjørt");
   const kjoler = db.ref("varer/kjole");
 
+
   var slideIndex = 0;
 showSlides();
 
@@ -37,13 +38,13 @@ setTimeout(showSlides, 2000); // Change image every 2 seconds
           <h1>${varer.navn}</h1>
           <img src="bilder/${varer.bilde}" alt="">
           <p> ${varer.type}, ${varer.stoff}</p>
+          <p>${varer.pris} kr </p>
       </article>
     `
   }
 
 
   function VisGensere() {
-      location.href = "#navigator";
       main.innerHTML=" " ;
       genser.on("child_added",VisVarer);
   }
@@ -66,4 +67,12 @@ setTimeout(showSlides, 2000); // Change image every 2 seconds
   function VisKjoler() {
       main.innerHTML=" " ;
       kjoler.on("child_added",VisVarer);
+  }
+
+  function VisGKnit() {
+    main.innerHTML="";
+    genser
+          .orderByChild("type")
+          .equalTo("knit")
+          .on("child_added",VisVarer);
   }

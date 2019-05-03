@@ -29,9 +29,10 @@ setTimeout(showSlides, 2000); // Change image every 2 seconds
   function VisVarer (snapshot){
     let varer = snapshot.val();
     let key = snapshot.key;
+    let parent = snapshot.ref.parent.key;
 
     main.innerHTML +=`
-      <a class="${varer.bilde}" href="produktdetaljer.html?id=${key}">
+      <a class="produkt" href="produktdetaljer.html?id=${key}&parent=${parent}">
       <article>
           <h1>${varer.navn}</h1>
           <img src="bilder/${varer.bilde}" alt="">
@@ -42,6 +43,7 @@ setTimeout(showSlides, 2000); // Change image every 2 seconds
 
 
   function VisGensere() {
+      location.href = "#navigator";
       main.innerHTML=" " ;
       genser.on("child_added",VisVarer);
   }

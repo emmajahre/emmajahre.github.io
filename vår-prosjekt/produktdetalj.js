@@ -14,6 +14,7 @@ const infoKjoler = db.ref("varer/kjoler/" + id);
 function genererHTML(snapshot){
   let varer = snapshot.val();
   main.innerHTML = `
+  <article class="infovarer">
     <h1>${varer.navn}</h1>
     <form action="handlekurv.html">
                   <select required name="">
@@ -26,6 +27,7 @@ function genererHTML(snapshot){
                   </select>
                   <button class="kjøp" type="submit">Legg til i handlekurv</button>
                 </form>
+  </article>
 
   `;
 

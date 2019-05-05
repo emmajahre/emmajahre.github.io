@@ -181,7 +181,7 @@
         "topper":{
           "topp001":{
               "navn":"Party",
-              "type":"bluse",
+              "type":"singlet",
               "pris":399,
               "farge1":"sort",
               "farge2":"",
@@ -249,7 +249,7 @@
               "navn":"Long Life",
               "type":"tskjorte",
               "pris":899,
-              "farge1":"blå",
+              "farge1":"sort",
               "farge2":"rød",
               "bilde":"topp007.jpg",
               "anledning":"hverdag",
@@ -460,7 +460,7 @@
               "navn":"Trøkk",
               "type":"bukse",
               "pris":399,
-              "farge1":"beige",
+              "farge1":"hvit",
               "farge2":"",
               "bilde":"bukse016.jpg",
               "anledning":"hverdag",

@@ -57,15 +57,22 @@
 
 
 
-<nav>
-            <div class="bar">
+<nav id="navForside">
+
+    <div class="dropdown">
+        <div class="dropknapp">
+          <a href="hovedside.html">Til forsiden</a>
+        </div>
+    </div>
+
       <div class="dropdown">
         <div class="dropknapp" onclick="VisGensere()">Gensere</div>
         <div class="dropdownEn">
           <div id="knapp1" class="innholdDrop"> Type
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGKnit()">Knit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGenser()">Genser</div>
+              <div class="innholdDrop"  onclick="VisGKnit()">Knit</div>
+              <div class="innholdDrop"  onclick="VisGGenser()">Genser</div>
+              <div class="innholdDrop"  onclick="VisGHoodie()">Hoodie</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Farge
@@ -84,7 +91,7 @@
           <div id="knapp1" class="innholdDrop"> Anledning
             <div class="dropdownTo">
               <div class="innholdDrop" id="file" onclick="VisGFest()">Fest</div>
-              <div class="innholdDrop" id="file" onclick="VisGHverdag()">Genser</div>
+              <div class="innholdDrop" id="file" onclick="VisGHverdag()">Hverdag</div>
             </div>
           </div>
         </div>
@@ -95,20 +102,25 @@
         <div class="dropdownEn">
           <div id="knapp1" class="innholdDrop"> Type
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGKnit()">Knit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGenser()">Genser</div>
+              <div class="innholdDrop"  onclick="VisTBluse()">Bluse</div>
+              <div class="innholdDrop"  onclick="VisTSinglet()">Singlet</div>
+              <div class="innholdDrop"  onclick="VisTTskjorte()">T-skjorte</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Farge
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGHvit()">Hvit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGrå()">Grå</div>
+              <div class="innholdDrop"  id="buttonHvit" onclick="VisTHvit()">Hvit</div>
+              <div class="innholdDrop" id="buttonSort" onclick="VisTSort()">Sort</div>
+              <div class="innholdDrop" id="buttonBlå" onclick="VisTBlå()">Blå</div>
+              <div class="innholdDrop" id="buttonGrønn" onclick="VisTGrønn()">Grønn</div>
+              <div class="innholdDrop" id="buttonRød" onclick="VisTRød()">Rød</div>
+              <div class="innholdDrop" id="buttonRosa" onclick="VisTRosa()">Rosa</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Anledning
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGFest()">Fest</div>
-              <div class="innholdDrop" id="file" onclick="VisGHverdag()">Genser</div>
+              <div class="innholdDrop" id="file" onclick="VisTFest()">Fest</div>
+              <div class="innholdDrop" id="file" onclick="VisTHverdag()">Hverdag</div>
             </div>
           </div>
         </div>
@@ -119,20 +131,24 @@
         <div class="dropdownEn">
           <div id="knapp1" class="innholdDrop"> Type
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGKnit()">Knit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGenser()">Genser</div>
+              <div class="innholdDrop"  onclick="VisBJeans()">Jeans</div>
+              <div class="innholdDrop"  onclick="VisBBukse()">Bukse</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Farge
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGHvit()">Hvit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGrå()">Grå</div>
+              <div class="innholdDrop"  id="buttonHvit" onclick="VisBHvit()">Hvit</div>
+              <div class="innholdDrop" id="buttonSort" onclick="VisBSort()">Sort</div>
+              <div class="innholdDrop" id="buttonBlå" onclick="VisBBlå()">Blå</div>
+              <div class="innholdDrop" id="buttonGrønn" onclick="VisBGrønn()">Grønn</div>
+              <div class="innholdDrop" id="buttonRød" onclick="VisBRød()">Rød</div>
+              <div class="innholdDrop" id="buttonRosa" onclick="VisBRosa()">Rosa</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Anledning
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGFest()">Fest</div>
-              <div class="innholdDrop" id="file" onclick="VisGHverdag()">Genser</div>
+              <div class="innholdDrop" id="file" onclick="VisBFest()">Fest</div>
+              <div class="innholdDrop" id="file" onclick="VisBHverdag()">Hverdag</div>
             </div>
           </div>
         </div>
@@ -143,20 +159,25 @@
         <div class="dropdownEn">
           <div id="knapp1" class="innholdDrop"> Type
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGKnit()">Knit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGenser()">Genser</div>
+              <div class="innholdDrop"  onclick="VisSKortskjort()">Mini skjørt</div>
+              <div class="innholdDrop"  onclick="VisSMaxiskjort()">Maxi skjørt</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Farge
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGHvit()">Hvit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGrå()">Grå</div>
+              <div class="innholdDrop"  id="buttonHvit" onclick="VisSHvit()">Hvit</div>
+              <div class="innholdDrop" id="buttonSort" onclick="VisSSort()">Sort</div>
+              <div class="innholdDrop" id="buttonBlå" onclick="VisSBlå()">Blå</div>
+              <div class="innholdDrop" id="buttonGrønn" onclick="VisSGrønn()">Grønn</div>
+              <div class="innholdDrop" id="buttonGul" onclick="VisSGul()">Gul</div>
+              <div class="innholdDrop" id="buttonRød" onclick="VisSRød()">Rød</div>
+              <div class="innholdDrop" id="buttonRosa" onclick="VisSRosa()">Rosa</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Anledning
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGFest()">Fest</div>
-              <div class="innholdDrop" id="file" onclick="VisGHverdag()">Genser</div>
+              <div class="innholdDrop" id="file" onclick="VisSFest()">Fest</div>
+              <div class="innholdDrop" id="file" onclick="VisSHverdag()">Hverdag</div>
             </div>
           </div>
         </div>
@@ -164,37 +185,36 @@
 
       <div class="dropdown">
         <div class="dropknapp" onclick="VisKjoler()">Kjoler</div>
-        <!--  Main Dropdown -->
         <div class="dropdownEn">
           <div id="knapp1" class="innholdDrop"> Type
-            <!--  Inside Dropdown -->
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGKnit()">Knit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGenser()">Genser</div>
+              <div class="innholdDrop"  onclick="VisKKortkjole()">Korte kjoler</div>
+              <div class="innholdDrop"  onclick="VisKMaxikjole()">Maxikjole</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Farge
-            <!--  Inside Dropdown -->
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGHvit()">Hvit</div>
-              <div class="innholdDrop" id="file" onclick="VisGGrå()">Grå</div>
+              <div class="innholdDrop"  id="buttonHvit" onclick="VisKHvit()">Hvit</div>
+              <div class="innholdDrop" id="buttonSort" onclick="VisKSort()">Sort</div>
+              <div class="innholdDrop" id="buttonBlå" onclick="VisKBlå()">Blå</div>
+              <div class="innholdDrop" id="buttonGrønn" onclick="VisKGrønn()">Grønn</div>
+              <div class="innholdDrop" id="buttonGul" onclick="VisKGul()">Gul</div>
+              <div class="innholdDrop" id="buttonRosa" onclick="VisKRosa()">Rosa</div>
             </div>
           </div>
           <div id="knapp1" class="innholdDrop"> Anledning
-            <!--  Inside Dropdown -->
             <div class="dropdownTo">
-              <div class="innholdDrop" id="file" onclick="VisGFest()">Fest</div>
-              <div class="innholdDrop" id="file" onclick="VisGHverdag()">Genser</div>
+              <div class="innholdDrop" id="file" onclick="VisKFest()">Fest</div>
+              <div class="innholdDrop" id="file" onclick="VisKHverdag()">Hverdag</div>
             </div>
           </div>
         </div>
       </div>
 
 
-
     </div>
 
-      </nav>
+</nav>
 
 
 
@@ -202,14 +222,16 @@
 
 
     <main>
-      <h1 id="insp">INSPO</h1>
-      <div class="insprierendeBilder">
-        <img id="inspo1" src="andrebilder\inspo1.jpg">
-        <img id="inspo2" src="andrebilder\inspo2.jpg">
-        <img id="inspo3" src="andrebilder\inspo3.jpg">
-        <img id="inspo5" src="andrebilder\inspo4.jpg">
-      </div>
-
+        <img id="inspo5" src="andrebilder\inspo5.jpg">
+        <p id="vår19">VÅRENS NYHETER</p>
+        <img id="inspo6" src="andrebilder\inspo6.jpg">
+        <p id="bomull">ØKOLOGISK BOMULL</p>
+        <img id="inspo7" src="andrebilder\inspo7.jpg">
+        <p id="rosa">ROSA - ÅRETS FARGE </p>
+      <!--  <img id="inspo8" src="andrebilder\inspo8.jpg">
+        <img id="inspo9" src="andrebilder\inspo9.jpg">
+        <img id="inspo10" src="andrebilder\inspo10.jpg">
+        <img id="inspo11" src="andrebilder\inspo11.jpg"> -->
 
 
 

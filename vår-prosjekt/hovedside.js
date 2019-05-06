@@ -5,6 +5,7 @@
   const bukser = db.ref("varer/bukser");
   const skjort = db.ref("varer/skjørt");
   const kjoler = db.ref("varer/kjole");
+  const nav = document.getElementById("bildeserie")
 
 
   var slideIndex = 0;
@@ -46,26 +47,31 @@ setTimeout(showSlides, 2000);
 
   function VisGensere() {
       main.innerHTML=" " ;
+      nav.innerHTML="";
       genser.on("child_added",VisVarer);
   }
 
   function VisTopper() {
       main.innerHTML=" " ;
+      nav.innerHTML="";
       topper.on("child_added",VisVarer);
   }
 
   function VisBukser() {
       main.innerHTML=" " ;
+      nav.innerHTML="";
       bukser.on("child_added",VisVarer);
   }
 
   function VisSkjort() {
       main.innerHTML=" " ;
+      nav.innerHTML="";
       skjort.on("child_added",VisVarer);
   }
 
   function VisKjoler() {
       main.innerHTML=" " ;
+      nav.innerHTML="";
       kjoler.on("child_added",VisVarer);
   }
 
@@ -74,6 +80,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ GENSERE*/
   function VisGKnit() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("type")
           .equalTo("knit")
@@ -82,6 +89,7 @@ setTimeout(showSlides, 2000);
 
   function VisGGenser() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("type")
           .equalTo("genser")
@@ -89,6 +97,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGHoodie() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("type")
           .equalTo("hoodie")
@@ -97,6 +106,7 @@ setTimeout(showSlides, 2000);
 
   function VisGHvit() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("hvit")
@@ -109,6 +119,7 @@ setTimeout(showSlides, 2000);
 
   function VisGGrå() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("grå")
@@ -120,6 +131,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGSort() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("sort")
@@ -132,6 +144,7 @@ setTimeout(showSlides, 2000);
 
   function VisGBlå() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("blå")
@@ -143,6 +156,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGGrønn() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("grønn")
@@ -155,6 +169,7 @@ setTimeout(showSlides, 2000);
 
   function VisGGul() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("gul")
@@ -166,6 +181,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGRød() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("rød")
@@ -178,6 +194,7 @@ setTimeout(showSlides, 2000);
 
   function VisGLilla() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("lilla")
@@ -189,6 +206,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGRosa() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("farge1")
           .equalTo("rosa")
@@ -200,6 +218,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGFest() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("anledning")
           .equalTo("fest")
@@ -208,6 +227,7 @@ setTimeout(showSlides, 2000);
 
   function VisGHverdag() {
     main.innerHTML="";
+    nav.innerHTML="";
     genser
           .orderByChild("anledning")
           .equalTo("hverdag")
@@ -217,6 +237,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ TOPPER*/
   function VisTBluse() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("type")
           .equalTo("bluse")
@@ -225,6 +246,7 @@ setTimeout(showSlides, 2000);
 
   function VisTSinglet() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("type")
           .equalTo("singlet")
@@ -232,6 +254,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTTskjorte() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("type")
           .equalTo("tskjorte")
@@ -240,6 +263,7 @@ setTimeout(showSlides, 2000);
 
   function VisTHvit() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("farge1")
           .equalTo("hvit")
@@ -251,6 +275,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTSort() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("farge1")
           .equalTo("sort")
@@ -263,6 +288,7 @@ setTimeout(showSlides, 2000);
 
   function VisTBlå() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("farge1")
           .equalTo("blå")
@@ -274,6 +300,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTGrønn() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("farge1")
           .equalTo("grønn")
@@ -285,6 +312,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTRød() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("farge1")
           .equalTo("rød")
@@ -297,6 +325,7 @@ setTimeout(showSlides, 2000);
 
   function VisTRosa() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("farge1")
           .equalTo("rosa")
@@ -308,6 +337,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTFest() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("anledning")
           .equalTo("fest")
@@ -316,6 +346,7 @@ setTimeout(showSlides, 2000);
 
   function VisTHverdag() {
     main.innerHTML="";
+    nav.innerHTML="";
     topper
           .orderByChild("anledning")
           .equalTo("hverdag")
@@ -324,6 +355,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ BUKSER*/
   function VisBJeans() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("type")
           .equalTo("jeans")
@@ -332,6 +364,7 @@ setTimeout(showSlides, 2000);
 
   function VisBBukse() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("type")
           .equalTo("bukse")
@@ -340,6 +373,7 @@ setTimeout(showSlides, 2000);
 
   function VisBHvit() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("farge1")
           .equalTo("hvit")
@@ -351,6 +385,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBSort() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("farge1")
           .equalTo("sort")
@@ -363,6 +398,7 @@ setTimeout(showSlides, 2000);
 
   function VisBBlå() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("farge1")
           .equalTo("blå")
@@ -374,6 +410,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBGrønn() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("farge1")
           .equalTo("grønn")
@@ -385,6 +422,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBRød() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("farge1")
           .equalTo("rød")
@@ -397,6 +435,7 @@ setTimeout(showSlides, 2000);
 
   function VisBRosa() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("farge1")
           .equalTo("rosa")
@@ -408,6 +447,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBFest() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("anledning")
           .equalTo("fest")
@@ -416,6 +456,7 @@ setTimeout(showSlides, 2000);
 
   function VisBHverdag() {
     main.innerHTML="";
+    nav.innerHTML="";
     bukser
           .orderByChild("anledning")
           .equalTo("hverdag")
@@ -425,6 +466,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ SKJØRT*/
   function VisSKortskjort() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("type")
           .equalTo("kortskjørt")
@@ -433,6 +475,7 @@ setTimeout(showSlides, 2000);
 
   function VisSMaxiskjort() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("type")
           .equalTo("maxiskjørt")
@@ -441,6 +484,7 @@ setTimeout(showSlides, 2000);
 
   function VisSHvit() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("farge1")
           .equalTo("hvit")
@@ -453,6 +497,7 @@ setTimeout(showSlides, 2000);
 
   function VisSSort() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("farge1")
           .equalTo("sort")
@@ -465,6 +510,7 @@ setTimeout(showSlides, 2000);
 
   function VisSBlå() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("farge1")
           .equalTo("blå")
@@ -476,6 +522,7 @@ setTimeout(showSlides, 2000);
   }
   function VisSGrønn() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("farge1")
           .equalTo("grønn")
@@ -488,6 +535,7 @@ setTimeout(showSlides, 2000);
 
   function VisSGul() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("farge1")
           .equalTo("gul")
@@ -499,6 +547,7 @@ setTimeout(showSlides, 2000);
   }
   function VisSRød() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("farge1")
           .equalTo("rød")
@@ -511,6 +560,7 @@ setTimeout(showSlides, 2000);
 
   function VisSRosa() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("farge1")
           .equalTo("rosa")
@@ -522,6 +572,7 @@ setTimeout(showSlides, 2000);
   }
   function VisSFest() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("anledning")
           .equalTo("fest")
@@ -530,6 +581,7 @@ setTimeout(showSlides, 2000);
 
   function VisSHverdag() {
     main.innerHTML="";
+    nav.innerHTML="";
     skjort
           .orderByChild("anledning")
           .equalTo("hverdag")
@@ -540,6 +592,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ KJOLER*/
   function VisKKortkjole() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("type")
           .equalTo("kortkjole")
@@ -548,6 +601,7 @@ setTimeout(showSlides, 2000);
 
   function VisKMaxikjole() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("type")
           .equalTo("maxikjole")
@@ -556,6 +610,7 @@ setTimeout(showSlides, 2000);
 
   function VisKHvit() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("farge1")
           .equalTo("hvit")
@@ -568,6 +623,7 @@ setTimeout(showSlides, 2000);
 
   function VisKSort() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("farge1")
           .equalTo("sort")
@@ -580,6 +636,7 @@ setTimeout(showSlides, 2000);
 
   function VisKBlå() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("farge1")
           .equalTo("blå")
@@ -591,6 +648,7 @@ setTimeout(showSlides, 2000);
   }
   function VisKGrønn() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("farge1")
           .equalTo("grønn")
@@ -603,6 +661,7 @@ setTimeout(showSlides, 2000);
 
   function VisKGul() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("farge1")
           .equalTo("gul")
@@ -615,6 +674,7 @@ setTimeout(showSlides, 2000);
 
   function VisKRosa() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("farge1")
           .equalTo("rosa")
@@ -626,6 +686,7 @@ setTimeout(showSlides, 2000);
   }
   function VisKFest() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("anledning")
           .equalTo("fest")
@@ -634,13 +695,59 @@ setTimeout(showSlides, 2000);
 
   function VisKHverdag() {
     main.innerHTML="";
+    nav.innerHTML="";
     kjoler
           .orderByChild("anledning")
           .equalTo("hverdag")
           .on("child_added",VisVarer);
   }
 
-  function vis4utvalgte() {
+  function visVår() {
+    nav.innerHTML="";
+    main.innerHTML="";
+    genser
+      .orderByChild("farge1")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    topper
+      .orderByChild("farge1")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    bukser
+      .orderByChild("farge1")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    skjort
+      .orderByChild("farge1")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    kjoler
+      .orderByChild("farge1")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    genser
+      .orderByChild("farge2")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    topper
+      .orderByChild("farge2")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    bukser
+      .orderByChild("farge2")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    skjort
+      .orderByChild("farge2")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+    kjoler
+      .orderByChild("farge2")
+      .equalTo("grønn")
+      .on("child_added",VisVarer);
+  }
+
+  /*function vis4utvalgte() {
     skjort
           .orderByChild("navn")
           .equalTo("Astrids sommer")
@@ -655,4 +762,4 @@ setTimeout(showSlides, 2000);
           .on("child_added",VisVarer);
   }
 
-  vis4utvalgte();
+  vis4utvalgte();*/

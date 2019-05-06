@@ -2,11 +2,11 @@ body{
   margin-left: 3%;
   margin-right: 3%;
   text-align: center;
-  text-decoration: none; /*FÅR IKKE BORT UNDERSTREK PÅ LINK*/
+  text-decoration: none; 
 }
 img{
-  width:70%;
-  height: 70%;
+  width:100%;
+  height: 100%;
 }
 #navForside{
   background-color: yellow;
@@ -24,13 +24,34 @@ main{
   background-color: white;
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-gap: 1%;
+  grid-gap: 5%;
+}
+#vår19{
+  grid-column:  1/4;
+}
+#vår19tekst{
+  grid-column: 4/5;
+  font-size: 220px;
+}
+#fest{
+  grid-column:  2/5;
+}
+#festtekst{
+  grid-column: 1/2;
+  font-size: 220px;
+}
+#grønn{
+  grid-column:  1/3;
+}
+#grønntekst{
+  grid-column: 3/5;
+  font-size: 220px;
 }
 
 @media (max-width: 2500px){
     main{
       grid-template-columns: 1fr 1fr 1fr;
-      background-color: white;
+      background-color: blue;
     }
     #navForside{
       padding-top: 5%;
@@ -41,12 +62,33 @@ main{
       margin-bottom: 5%;
       border-bottom: 1px solid darkgrey;
     }
+    #vår19{
+      grid-column:  1/3;
+    }
+    #vår19tekst{
+      grid-column: 3/4;
+      font-size: 160px;
+    }
+    #fest{
+      grid-column:  2/4;
+    }
+    #festtekst{
+      grid-column: 1/2;
+      font-size: 160px;
+    }
+    #grønn{
+      grid-column:  1/3;
+    }
+    #grønntekst{
+      grid-column: 3/4;
+      font-size: 160px;
+    }
 }
 
-@media (max-width: 1700px){
+@media (max-width: 2000px){
   main{
     grid-template-columns: 1fr 1fr;
-    background-color: white;
+    background-color: green;
   }
   #navForside{
     padding-top: 5%;
@@ -57,12 +99,33 @@ main{
     margin-bottom: 5%;
     border-bottom: 1px solid darkgrey;
   }
-
+  #vår19{
+    grid-column:  1/3;
+  }
+  #vår19tekst{
+    grid-column: 1/3;
+    font-size: 100px;
+  }
+  #fest{
+    grid-column:  2/4;
+  }
+  #festtekst{
+    grid-column: 1/2;
+    font-size: 100px;
+  }
+  #grønn{
+    grid-column:  1/3;
+  }
+  #grønntekst{
+    grid-column: 3/4;
+    font-size: 100px;
+  }
 }
-@media (max-width: 1100px){
+
+@media (max-width: 1300px){
   main{
     grid-template-columns: 1fr;
-    background-color: white;
+    background-color: yellow;
     grid-gap: 1%;
   }
   #navForside{
@@ -73,6 +136,31 @@ main{
     grid-gap: 5%;
     margin-bottom: 5%;
     border-bottom: 1px solid darkgrey;
+  }
+  #vår19{
+    grid-column:  1/3;
+  }
+  #vår19tekst{ /*får ikke vårtekst eller festtekst til å dekke grid 1/3,
+    slik bildene deres gjør*/
+    grid-column: 1/3;
+    font-size: 60px;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  #fest{
+    grid-column:  1/3;
+  }
+  #festtekst{
+    grid-column: 1/3;
+    font-size: 60px;
+  }
+  #grønn{
+    grid-column:  1/2;
+  }
+  #grønntekst{
+    grid-column: 2/3;
+    font-size: 60px;
   }
 
 }
@@ -146,27 +234,6 @@ img {vertical-align: middle;}
   .text {font-size: 50px}
 }
 
-#insp{
-  font-size: 100px;
-}
-#inspo5 {
-  grid-column: 1/4;
-}
-#inspo6 {
-  grid-column: 3/6;
-}
-#inspo7 {
-  grid-column: 6/10;
-}
-#vår19 {
-  grid-column: 3/5;
-}
-#bomull {
-  grid-column: 2/3;
-}
-#rosa {
-  grid-column: 3/5;
-}
 .produkt{
   text-decoration: none;
   color: black;
@@ -209,10 +276,10 @@ footer{
   }
   #bestill{
     text-align: right;
-    font-size: 60px;
+    font-size: 40px;
     margin-left: 68%;
     margin-top: 10%;
-    background-color:#F6D856 ;
+    background-color:navy ;
   }
 
   #navForside{

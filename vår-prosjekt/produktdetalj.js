@@ -10,24 +10,30 @@ const valgtProdukt = db.ref("varer/"+parent+"/"+id);
 
 
 
+
+
 function genererHTML(snapshot){
   let varer = snapshot.val();
   main.innerHTML = `
   <article class="infovarer">
     <h1 id="produktNavn">${varer.navn}</h1>
-    <p id="produktPris">${varer.pris} kr </p>
     <img id="produktBilde" src="bilder/${varer.bilde}">
+    <p id="produktPris">${varer.pris},- </p>
+    <!--<p id="InfoProdukt">${varer.type} i ${varer.stoff} </p>
+    <p id="InfoProdukt">Passer fint til ${varer.anledning}</p>-->
+    <div id="produktKnapper">
     <form action="handlekurv.html">
                   <select required name="">
-                    <option class="str" value="">${varer.navn}</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option class="str" value="">størrelse</option>
+                    <option value="1">34</option>
+                    <option value="2">36</option>
+                    <option value="3">38</option>
+                    <option value="4">40</option>
+                    <option value="5">42</option>
                   </select>
                   <button class="kjøp" type="submit">Legg til i handlekurv</button>
                 </form>
+    </div>
   </article>
 
   `;

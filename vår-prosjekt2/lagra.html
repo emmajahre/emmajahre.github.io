@@ -1,0 +1,89 @@
+
+function genererHTML(snapshot){
+  let varer = snapshot.val();
+  main.innerHTML = `
+  <div id="produktinfo">
+  <div class="produktBilde">
+      <img src="bilder/${varer.bilde}">
+    </div>
+    <div class="infovarer">
+      <h1 id="produktNavn">${varer.navn}</h1>
+      <p id="produktMerke">${varer.type}</p>
+      <p>${varer.navn}, ${varer.farge1}</p>
+      <p id="produktPris">${varer.pris},- </p>
+      <form action="handlekurv.html">
+          <select id="Str" name="velgStr" required>
+              <option value="">Størrelse</option>
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+          </select>
+          <button id="submithandlekurv" type="submit">Legg til i handlekurv</button>
+        </form>
+    </div>
+  </div>
+
+  `;
+
+
+}
+
+
+function genererHTML(snapshot){
+  let varer = snapshot.val();
+  main.innerHTML = `
+  <div id="produktinfo">
+  <div class="produktBilde">
+      <img src="bilder/${varer.bilde}">
+    </div>
+    <div class="infovarer">
+      <h1 id="produktNavn">${varer.navn}</h1>
+      <p id="produktMerke">${varer.type}</p>
+      <p>${varer.navn}, ${varer.farge1}</p>
+      <p id="produktPris">${varer.pris},- </p>
+      <form action="handlekurv.html">
+          <select id="Str" name="velgStr" required>
+              <option value="">Størrelse</option>
+              <option value="34">34</option>
+              <option value="36">36</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+          </select>
+          <button id="submithandlekurv" type="submit">Legg til i handlekurv</button>
+        </form>
+    </div>
+  </div>
+
+  `;
+
+
+}
+
+
+function genererHTML(snapshot){
+  let varer = snapshot.val();
+  main.innerHTML = `
+  <article class="infovarer">
+    <h1 id="produktNavn">${varer.navn}</h1>
+    <p id="produktPris">${varer.pris} kr </p>
+    <img id="produktBilde" src="bilder/${varer.bilde}">
+    <!--<p id="InfoProdukt">${varer.type} i ${varer.stoff} </p>
+    <p id="InfoProdukt">Passer fint til ${varer.anledning}</p>-->
+    <form action="handlekurv.html">
+                  <select required name="">
+                    <option class="str" value="">størrelse</option>
+                    <option value="1">34</option>
+                    <option value="2">36</option>
+                    <option value="3">38</option>
+                    <option value="4">40</option>
+                    <option value="5">42</option>
+                  </select>
+                  <button class="kjøp" type="submit">Legg til i handlekurv</button>
+                </form>
+  </article>
+
+  `;
+
+
+}

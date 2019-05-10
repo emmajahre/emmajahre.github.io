@@ -62,36 +62,36 @@ setTimeout(showSlides, 2000);
 }
 
   function VisGensere() {
-      main.innerHTML="Vi har gensere i en hver smak! Store strikkegensere eller tynne vårgensere!" ;
-      nav.innerHTML="";
+      main.innerHTML="" ;
+      nav.innerHTML="Vi har gensere i en hver smak! Store strikkegensere eller tynne vårgensere!";
       OverNav.innerHTML="";
       genser.on("child_added",VisVarer);
   }
 
   function VisTopper() {
-      main.innerHTML="Vi har både den allvenlige hverdagsblusen og toppen du trenger til fest! Her er det mange farger å velge mellom!" ;
-      nav.innerHTML="";
+      main.innerHTML="" ;
+      nav.innerHTML="Vi har både den anvendelige hverdagsblusen og toppen du trenger til fest! Her er det mange farger å velge mellom!";
       OverNav.innerHTML="";
       topper.on("child_added",VisVarer);
   }
 
   function VisBukser() {
-      main.innerHTML="Vi har alle buksene du trenger! De kule dressbuksene til jobb og silkebuksene til fest. Vi har også et stort utvalg av jeans!" ;
-      nav.innerHTML="";
+      main.innerHTML="" ;
+      nav.innerHTML="Vi har alle buksene du trenger! De kule dressbuksene til jobb og silkebuksene til fest. Vi har også et stort utvalg av jeans!";
       OverNav.innerHTML="";
       bukser.on("child_added",VisVarer);
   }
 
   function VisSkjort() {
-      main.innerHTML="Nå er våren her og det er tiden for sukkersøte skjørt igjen! Vi har både avslappede og festlige skjørt! " ;
-      nav.innerHTML="";
+      main.innerHTML="" ;
+      nav.innerHTML="Nå er våren her og det er tiden for sukkersøte skjørt igjen! Vi har både avslappede og festlige skjørt! ";
       OverNav.innerHTML="";
       skjort.on("child_added",VisVarer);
   }
 
   function VisKjoler() {
-      main.innerHTML="Skal du på ball? Eller må kaste på no lett når du skal til stranda? Vi har enhver kjole du trenger og ønsker deg!" ;
-      nav.innerHTML="";
+      main.innerHTML="" ;
+      nav.innerHTML="Skal du på ball? Eller må kaste på no lett når du skal til stranda? Vi har enhver kjole du trenger og ønsker deg!";
       OverNav.innerHTML="";
       kjoler.on("child_added",VisVarer);
   }
@@ -101,7 +101,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ GENSERE*/
   function VisGKnit() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Supermyke strikkegensere, perfeke til kalde kvelder!";
     OverNav.innerHTML="";
     genser
           .orderByChild("type")
@@ -111,7 +111,7 @@ setTimeout(showSlides, 2000);
 
   function VisGGenser() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Årets fineste tynne gensere, perfekt til våren!!";
     genser
           .orderByChild("type")
           .equalTo("genser")
@@ -119,7 +119,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGHoodie() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kule hoodies perfekt til en olajakke eller kul kåpe!";
     OverNav.innerHTML="";
     genser
           .orderByChild("type")
@@ -129,7 +129,7 @@ setTimeout(showSlides, 2000);
 
   function VisGHvit() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Hvitt og rent";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -143,7 +143,7 @@ setTimeout(showSlides, 2000);
 
   function VisGGrå() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Grått, men ikke kjedelig!";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -156,7 +156,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGSort() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sort - fargen som går til alt!";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -170,7 +170,7 @@ setTimeout(showSlides, 2000);
 
   function VisGBlå() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Nydelige nyanser av blått!";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -183,7 +183,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGGrønn() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Grønt er skjønt - Og årets farge!";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -197,7 +197,7 @@ setTimeout(showSlides, 2000);
 
   function VisGGul() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Gult og kjempekult!";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -210,7 +210,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGRød() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kle deg i rødt, kjærlighetens farge!";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -224,7 +224,7 @@ setTimeout(showSlides, 2000);
 
   function VisGLilla() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Lilla, en sjelden perle!";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -237,7 +237,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGRosa() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sukkersøt rosa";
     OverNav.innerHTML="";
     genser
           .orderByChild("farge1")
@@ -250,7 +250,7 @@ setTimeout(showSlides, 2000);
   }
   function VisGFest() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Partytime!!";
     OverNav.innerHTML="";
     genser
           .orderByChild("anledning")
@@ -260,7 +260,7 @@ setTimeout(showSlides, 2000);
 
   function VisGHverdag() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kul på kontoret!";
     OverNav.innerHTML="";
     genser
           .orderByChild("anledning")
@@ -271,7 +271,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ TOPPER*/
   function VisTBluse() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Vær pyntet og kul samtidig i en rå bluse!";
     OverNav.innerHTML="";
     topper
           .orderByChild("type")
@@ -281,7 +281,7 @@ setTimeout(showSlides, 2000);
 
   function VisTSinglet() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kjøl deg ned med bare ermer!";
     OverNav.innerHTML="";
     topper
           .orderByChild("type")
@@ -290,7 +290,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTTskjorte() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="En råkul tskjorte gjør et antrekk kult!";
     OverNav.innerHTML="";
     topper
           .orderByChild("type")
@@ -300,7 +300,7 @@ setTimeout(showSlides, 2000);
 
   function VisTHvit() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Hvitt og rent";
     OverNav.innerHTML="";
     topper
           .orderByChild("farge1")
@@ -313,8 +313,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTSort() {
     main.innerHTML="";
-    nav.innerHTML="";
-    OverNav.innerHTML="";
+    nav.innerHTML="Sort - fargen som går til alt!";
     topper
           .orderByChild("farge1")
           .equalTo("sort")
@@ -327,7 +326,7 @@ setTimeout(showSlides, 2000);
 
   function VisTBlå() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Nydelige nyanser av blått!";
     OverNav.innerHTML="";
     topper
           .orderByChild("farge1")
@@ -340,7 +339,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTGrønn() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Grønt er skjønt - Og årets farge!";
     OverNav.innerHTML="";
     topper
           .orderByChild("farge1")
@@ -353,7 +352,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTRød() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kle deg i rødt, kjærlighetens farge!";
     OverNav.innerHTML="";
     topper
           .orderByChild("farge1")
@@ -367,7 +366,7 @@ setTimeout(showSlides, 2000);
 
   function VisTRosa() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sukkersøt rosa";
     OverNav.innerHTML="";
     topper
           .orderByChild("farge1")
@@ -380,7 +379,7 @@ setTimeout(showSlides, 2000);
   }
   function VisTFest() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Stilren og vakker i våre bluser til fest!";
     OverNav.innerHTML="";
     topper
           .orderByChild("anledning")
@@ -390,7 +389,7 @@ setTimeout(showSlides, 2000);
 
   function VisTHverdag() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Stilren til jobb!";
     OverNav.innerHTML="";
     topper
           .orderByChild("anledning")
@@ -400,7 +399,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ BUKSER*/
   function VisBJeans() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Jeans kan brukes til alt! Er har vi alle typer!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("type")
@@ -410,7 +409,7 @@ setTimeout(showSlides, 2000);
 
   function VisBBukse() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="En kul bukse for et stiligere antrekk!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("type")
@@ -420,8 +419,7 @@ setTimeout(showSlides, 2000);
 
   function VisBHvit() {
     main.innerHTML="";
-    nav.innerHTML="";
-    OverNav.innerHTML="";
+    nav.innerHTML="Hvitt og rent";
     bukser
           .orderByChild("farge1")
           .equalTo("hvit")
@@ -433,7 +431,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBSort() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sort - fargen som går til alt!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("farge1")
@@ -447,7 +445,7 @@ setTimeout(showSlides, 2000);
 
   function VisBBlå() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Nydelige nyanser av blått!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("farge1")
@@ -460,7 +458,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBGrønn() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Grønt er skjønt - Og årets farge!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("farge1")
@@ -473,7 +471,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBRød() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kle deg i rødt, kjærlighetens farge!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("farge1")
@@ -487,7 +485,7 @@ setTimeout(showSlides, 2000);
 
   function VisBRosa() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sukkersøt rosa";
     OverNav.innerHTML="";
     bukser
           .orderByChild("farge1")
@@ -500,7 +498,7 @@ setTimeout(showSlides, 2000);
   }
   function VisBFest() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="På fest med mer klasse!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("anledning")
@@ -510,7 +508,7 @@ setTimeout(showSlides, 2000);
 
   function VisBHverdag() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="En stilig bukse!";
     OverNav.innerHTML="";
     bukser
           .orderByChild("anledning")
@@ -521,7 +519,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ SKJØRT*/
   function VisSKortskjort() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Vakre skjørt for fine legger!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("type")
@@ -531,7 +529,7 @@ setTimeout(showSlides, 2000);
 
   function VisSMaxiskjort() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kuleste skjørtene til en litt kjølig dag!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("type")
@@ -541,7 +539,7 @@ setTimeout(showSlides, 2000);
 
   function VisSHvit() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Hvitt og rent";
     OverNav.innerHTML="";
     skjort
           .orderByChild("farge1")
@@ -555,7 +553,7 @@ setTimeout(showSlides, 2000);
 
   function VisSSort() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sort - fargen som går til alt!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("farge1")
@@ -569,7 +567,7 @@ setTimeout(showSlides, 2000);
 
   function VisSBlå() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Nydelige nyanser av blått!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("farge1")
@@ -582,7 +580,7 @@ setTimeout(showSlides, 2000);
   }
   function VisSGrønn() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Grønt er skjønt - Og årets farge!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("farge1")
@@ -596,7 +594,7 @@ setTimeout(showSlides, 2000);
 
   function VisSGul() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Gult og kjempekult!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("farge1")
@@ -609,7 +607,7 @@ setTimeout(showSlides, 2000);
   }
   function VisSRød() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Kle deg i rødt, kjærlighetens farge!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("farge1")
@@ -623,7 +621,7 @@ setTimeout(showSlides, 2000);
 
   function VisSRosa() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sukkersøt rosa";
     OverNav.innerHTML="";
     skjort
           .orderByChild("farge1")
@@ -636,7 +634,7 @@ setTimeout(showSlides, 2000);
   }
   function VisSFest() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Søt og pyntet til bursdagsfeiringer!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("anledning")
@@ -646,7 +644,7 @@ setTimeout(showSlides, 2000);
 
   function VisSHverdag() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Anvendelige skjørt til skole og jobb!";
     OverNav.innerHTML="";
     skjort
           .orderByChild("anledning")
@@ -658,7 +656,7 @@ setTimeout(showSlides, 2000);
   /*FILTER PÅ KJOLER*/
   function VisKKortkjole() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Nydeligste kjolene, til fest og hverdag!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("type")
@@ -668,7 +666,7 @@ setTimeout(showSlides, 2000);
 
   function VisKMaxikjole() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Lange kjoler til fest og hverdag!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("type")
@@ -678,7 +676,7 @@ setTimeout(showSlides, 2000);
 
   function VisKHvit() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Hvitt og rent";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("farge1")
@@ -692,7 +690,7 @@ setTimeout(showSlides, 2000);
 
   function VisKSort() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sort - fargen som går til alt!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("farge1")
@@ -706,7 +704,7 @@ setTimeout(showSlides, 2000);
 
   function VisKBlå() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Nydelige nyanser av blått!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("farge1")
@@ -719,7 +717,7 @@ setTimeout(showSlides, 2000);
   }
   function VisKGrønn() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Grønt er skjønt - Og årets farge!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("farge1")
@@ -733,7 +731,7 @@ setTimeout(showSlides, 2000);
 
   function VisKGul() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Gult og kjempekult!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("farge1")
@@ -747,7 +745,7 @@ setTimeout(showSlides, 2000);
 
   function VisKRosa() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Sukkersøt rosa";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("farge1")
@@ -760,7 +758,7 @@ setTimeout(showSlides, 2000);
   }
   function VisKFest() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="Vi gjør deg klar for fest!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("anledning")
@@ -770,7 +768,7 @@ setTimeout(showSlides, 2000);
 
   function VisKHverdag() {
     main.innerHTML="";
-    nav.innerHTML="";
+    nav.innerHTML="For litt ekstra komplimenter i hverdagen!";
     OverNav.innerHTML="";
     kjoler
           .orderByChild("anledning")
@@ -779,7 +777,7 @@ setTimeout(showSlides, 2000);
   }
 
   function visVår() {
-    nav.innerHTML="";
+    nav.innerHTML="På årets vårmote står det klare farger og vakre mønstre. Gjør deg klar her!";
     OverNav.innerHTML="";
     main.innerHTML="";
     genser

@@ -5,6 +5,7 @@ body{
   text-align: center;
   text-decoration: none;
   background-color: white;
+  max-width: 100%;
 }
 img{
   width:100%;
@@ -19,16 +20,19 @@ main{
 }
 #EmzFahsionLogo{
     font-size: 40px;
-    color: yellow;
+    color: #DC7633;
+    font-weight: bold;
   }
 p, h1{
   font-family: serif;
-  color: yellow;
+  color: #E59866;
 }
 a{
   color: black;
   text-decoration: none;
 }
+
+
 /*FORSIDE*/
 #navForside{
   background-color: transparent;
@@ -37,8 +41,8 @@ a{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1%;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-top: 1%;
   border-bottom: 3px solid black;
   border-top: 3px solid black;
 }
@@ -47,327 +51,360 @@ a{
   padding-bottom: 1%;
   border-bottom: 1px solid black;
   margin-top: 10%;
+  font-size: 30px;
+  color: #D35400;
 }
+#forsideInfo{
+  font-size: 30px;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+
+
 /*PRODUKTSIDE*/
-.infovarer{
-  margin-top: 20%;
-}
 #produktBilde{
-  margin-left: 155%;
+  width: 70%;
+  height: 90%;
+  margin-left:30%;
+  padding-right: 0%;
+}
+#produktInfo{
+  margin-right: 20%;
+  padding-left: 0%;
+}
+#mainProdukt{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 #produktNavn{
-  margin-left: 205%;
+  font-size: 90px;
+}
+#produktStoff{
+  font-size: 20px;
+}
+#produktAnledning{
+  font-size: 20px;
 }
 #produktPris{
-  margin-left: 205%;
+  font-size: 15px;
 }
-#produktKnapper{
-  margin-left: 195%;
-  margin-top: 2%;
+#leggTil{
+  padding-left: 100%;
 }
-
-
-
-
-/*BILDENE SOM SLIDER*/
-.medium{
-  width: 100%;
-}
-
- {box-sizing: border-box;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-
-.text {
-  color: yellow;
-  font-size: 80px;
+#bildeserie{
+  font-size: 30px;
+  color: black;
   font-weight: bold;
-  position: absolute;
-  bottom: 50%;
-  width: 100%;
-  text-align: center;
 }
 
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  /*display: inline-block*/
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-/*DROPDOWN MENY*/
-.dropdown {
-    position: relative;
-    text-align: center;
-    background-color: white;
-}
-
-.dropdown .dropknapp {
-    font-size: 20px;
-    border: none;
-    outline: none;
-    color: black;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-#navForside a:hover, .dropdown:hover .dropknapp {
-    background-color: #005881;
-}
-
-.dropdownEn {
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  border: solid darkgrey 1px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdownTo {
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  left: 160px; /*SETTE MEDIAQUERY*/
-  top: 0px;
-  min-width: 50%;
-  background-color: white;
-  border: solid darkgrey 1px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown:hover .dropdownEn, #knapp1:hover > .dropdownTo {
-  display: block;
-  z-index: 999;
-}
-/*#knapp1{
-  padding-right: 40%;
-}*/
-
-.dropdownEn .innholdDrop {
-    color: black;
-    padding: 10%;
-    display: block;
-    text-align: left;
-}
-
-.dropdownEn .innholdDrop:hover, .dropdownTo a:hover {
-    background-color: #ddd;
-}
-.produkt:hover{
-  box-shadow: 6px 6px 3px lightgrey;
-}
-
-
-/*KNAPPER TIL FARGEFILTER*/
-#buttonBlå {
-  background-color: white;
-  color: black;
-  border: 3px solid #008CBA;
-  }
-#buttonBlå:hover {
-  background-color: #008CBA;
-  color: white;
-  }
-
-#buttonGul {
-  background-color: white;
-  color: black;
-  border: 3px solid gold;
-}
-
-#buttonGul:hover {
-  background-color: gold;
-  color: white;
-}
-
-#buttonSort {
-  background-color: white;
-  color: black;
-  border: 3px solid black;
-  }
-#buttonSort:hover {
-  background-color: black;
-  color: white;
-  }
-
-#buttonSort {
-  background-color: white;
-  color: black;
-  border: 3px solid black;
-}
-
-#buttonSort:hover {
-  background-color: black;
-  color: white;
-}
-
-#buttonRosa {
-  background-color: white;
-  color: black;
-  border: 3px solid deeppink;
-  }
-#buttonRosa:hover {
-  background-color: deeppink;
-  color: white;
-  }
-
-#buttonHvit {
-  background-color: white;
-  color: black;
-  border: 3px solid #e7e7e7;
-  }
-#buttonHvit:hover {
-  background-color: #e7e7e7;
-  }
-
-#buttonHvit {
-  background-color: white;
-  color: black;
-  border: 3px solid blue;
-  }
-#buttonHvit:hover {
-  background-color: white;
-  color: black;
-  }
-
-#buttonGrønn {
-  background-color: white;
-  color: black;
-  border: 3px solid #4CAF50;
-  }
-#buttonGrønn:hover {
-  background-color: #4CAF50;
-  color: white;
-  }
-
-#buttonRød {
-  background-color: white;
-  color: black;
-  border: 3px solid #f44336;
-  }
-#buttonRød:hover {
-  background-color: #f44336;
-  color: white;
-  }
-#buttonGrå {
-  background-color: white;
-  color: black;
-  border: 3px solid grey;
-  }
-#buttonGrå:hover {
-  background-color: grey;
-  color: white;
-  }
-#buttonLilla {
-  background-color: white;
-  color: black;
-  border: 3px solid purple;
-  }
-#buttonLilla:hover {
-  background-color: purple;
-  color: white;
-  }
-
-
-
-
-
-.produkt{
-  text-decoration: none;
-  color: black;
-}
+/*FOOTER*/
 footer{
     font-weight: lighter;
-    font-style: italic;
-    color: #C0AB8E;
+    color: #D35400;
+    background-color: #F6DDCC;
     text-align: center;
-    margin-top: 50%;
-    border-top: 1px solid darkgrey;
-    margin-bottom: 8%;
-    padding-top: 5%;
+    margin-top: 20%;
+    margin-bottom: 1%;
+    border-top: 1px solid black;
+    padding-bottom: 2%;
+    padding-top: 2%;
   }
   h1{
-    font-size: 10px;
+    font-size: 30px;
     margin-top: auto;
     font-weight: lighter;
+    color: #BA4A00;
   }
   #innholdfooter{
-    font-size: 40px;
+    font-size: 20px;
     margin-bottom: -10px;
+    color: #D35400;
   }
+
+
 
   /*HANDLEKURV*/
-  #navHandlekurv{
-
-  }
-  #handlelapp{
-
-  }
-  .kontaktinfo{
+  #handlekurvGrid{
     display: grid;
-    grid-template-columns:1fr;
-    grid-column-gap: 1%;
-    grid-row-gap:5%;
-    font-size: 30px;
+    grid-template-columns: 1fr;
   }
   #kontaktopplysning{
     font-size: 20px;
-    width: 20%;
   }
   #bestill{
     text-align: right;
-    font-size: 40px;
-    margin-left: 68%;
-    margin-top: 10%;
-    background-color:navy ;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color:darkgrey ;
+  }
+  .kontaktinfo{
+    background-color: lightgrey;
+    padding-top: 1%;
+    margin-top: 5%;
+  }
+  .handlelapp{
+    margin-top: 1%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  
+
+
+
+
+
+  /*DROPDOWN MENY*/
+  .dropdown {
+      position: relative;
+      text-align: center;
+      background-color: white;
+  }
+
+  .dropdown .dropknapp {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      color: black;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+
+  #navForside a:hover, .dropdown:hover .dropknapp {
+      background-color: #EDBB99;
+  }
+
+  .dropdownEn {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    border: solid darkgrey 1px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdownTo {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 100%; /*SETTE MEDIAQUERY*/
+    top: 0px;
+    min-width: 50%;
+    background-color: white;
+    border: solid darkgrey 1px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown:hover .dropdownEn, #knapp1:hover > .dropdownTo {
+    display: block;
+    z-index: 999;
+  }
+  /*#knapp1{
+    padding-right: 40%;
+  }*/
+
+  .dropdownEn .innholdDrop {
+      color: black;
+      padding: 10%;
+      display: block;
+      text-align: left;
+  }
+
+  .dropdownEn .innholdDrop:hover, .dropdownTo a:hover {
+      background-color: #ddd;
+  }
+  .produkt:hover{
+    box-shadow: 6px 6px 3px lightgrey;
+  }
+  .dropdownTo{
+    padding-bottom:20%;
   }
 
 
 
 
+  /*KNAPPER TIL FARGEFILTER*/
+  #buttonBlå {
+    background-color: white;
+    color: black;
+    border: 3px solid #008CBA;
+    }
+  #buttonBlå:hover {
+    background-color: #008CBA;
+    color: white;
+    }
 
+  #buttonGul {
+    background-color: white;
+    color: black;
+    border: 3px solid gold;
+  }
+
+  #buttonGul:hover {
+    background-color: gold;
+    color: white;
+  }
+
+  #buttonSort {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    }
+  #buttonSort:hover {
+    background-color: black;
+    color: white;
+    }
+
+  #buttonSort {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+  }
+
+  #buttonSort:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #buttonRosa {
+    background-color: white;
+    color: black;
+    border: 3px solid deeppink;
+    }
+  #buttonRosa:hover {
+    background-color: deeppink;
+    color: white;
+    }
+
+  #buttonHvit {
+    background-color: white;
+    color: black;
+    border: 3px solid #e7e7e7;
+    }
+  #buttonHvit:hover {
+    background-color: #e7e7e7;
+    }
+
+  #buttonHvit {
+    background-color: white;
+    color: black;
+    border: 3px solid blue;
+    }
+  #buttonHvit:hover {
+    background-color: white;
+    color: black;
+    }
+
+  #buttonGrønn {
+    background-color: white;
+    color: black;
+    border: 3px solid #4CAF50;
+    }
+  #buttonGrønn:hover {
+    background-color: #4CAF50;
+    color: white;
+    }
+
+  #buttonRød {
+    background-color: white;
+    color: black;
+    border: 3px solid #f44336;
+    }
+  #buttonRød:hover {
+    background-color: #f44336;
+    color: white;
+    }
+  #buttonGrå {
+    background-color: white;
+    color: black;
+    border: 3px solid grey;
+    }
+  #buttonGrå:hover {
+    background-color: grey;
+    color: white;
+    }
+  #buttonLilla {
+    background-color: white;
+    color: black;
+    border: 3px solid purple;
+    }
+  #buttonLilla:hover {
+    background-color: purple;
+    color: white;
+    }
+
+
+    /*BILDENE SOM SLIDER*/
+    .medium{
+      width: 100%;
+    }
+
+     {box-sizing: border-box;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+    }
+
+
+    .text {
+      color: #BA4A00;
+      font-size: 80px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 50%;
+      width: 100%;
+      text-align: center;
+    }
+
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      /*display: inline-block; NÅR DENNE FJERNES BLIR DET FIELMELDING I HOVEDSIDE.JS LINJE 27!*/
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 3s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .2}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
 
 
 /*MEDIA QUERYS*/
@@ -375,56 +412,34 @@ footer{
 @media (max-width: 1200px){
     main{
       grid-template-columns: 1fr 1fr 1fr;
-      background-color: blue;
     }
     #navForside{
-      padding-top: 5%;
-      padding-bottom: 5%;
+      background-color: transparent;
+      padding-top: 2%;
+      padding-bottom: 2%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-gap: 2%;
-      margin-bottom: 5%;
-      border-bottom: 1px solid darkgrey;
-    }
-    #vår19{
-      grid-column:  1/3;
-    }
-    #vår19tekst{
-      grid-column: 3/4;
-      font-size: 160px;
-    }
-    #fest{
-      grid-column:  2/4;
-    }
-    #festtekst{
-      grid-column: 1/2;
-      font-size: 160px;
-    }
-    #grønn{
-      grid-column:  1/3;
-    }
-    #grønntekst{
-      grid-column: 3/4;
-      font-size: 160px;
+      grid-gap: 5%;
+      margin-bottom: 3%;
+      margin-top: 1%;
+      border-bottom: 3px solid black;
+      border-top: 3px solid black;
     }
     .text{
       font-size: 30px;
     }
-    .infovarer{
-      margin-top: 20%;
-    }
     #produktBilde{
-      margin-left: 105%;
+      width: 80%;
+      height: 100%;
+      margin-left:20%;
+      padding-right: 0%;
+    }
+    #produktInfo{
+      margin-right: 10%;
+      padding-left: 0%;
     }
     #produktNavn{
-      margin-left: 147%;
-    }
-    #produktPris{
-      margin-left: 147%;
-    }
-    #produktKnapper{
-      margin-left: 140%;
-      margin-top: 2%;
+      font-size: 80px;
     }
 }
 
@@ -433,40 +448,21 @@ footer{
 @media (max-width: 900px){
   main{
     grid-template-columns: 1fr 1fr;
-    background-color: green;
   }
   #navForside{
-    padding-top: 5%;
-    padding-bottom: 5%;
+    background-color: transparent;
+    padding-top: 2%;
+    padding-bottom: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10%;
-    margin-bottom: 5%;
-    border-bottom: 1px solid darkgrey;
-  }
-  #vår19{
-    grid-column:  1/4;
-  }
-  #vår19tekst{
-    grid-column: 1/4;
-    font-size: 100px;
-  }
-  #fest{
-    grid-column:  2/4;
-  }
-  #festtekst{
-    grid-column: 1/2;
-    font-size: 100px;
-  }
-  #grønn{
-    grid-column:  1/3;
-  }
-  #grønntekst{
-    grid-column: 3/4;
-    font-size: 100px;
+    grid-gap: 5%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
   }
   .dropdownTo {
-    left: 10px;
+    left: 10%;
   }
 
   .dropdown:hover .dropdownEn, #knapp1:hover > .dropdownTo {
@@ -475,25 +471,27 @@ footer{
   .dropdownEn {
     min-width: 150px;
   }
-  .infovarer{
-    margin-top: 20%;
-  }
-  #produktBilde{
-    margin-left: 55%;
-  }
-  #produktNavn{
-    margin-left: 97%;
-  }
-  #produktPris{
-    margin-left: 97%;
-  }
-  #produktKnapper{
-    margin-left: 92%;
-    margin-top: 2%;
-  }
+
   img{
     width: 90%;
     height: 90%;
+  }
+  #slidebilder{
+    width: 100%;
+    height:100%;
+  }
+  #produktBilde{
+    width: 100%;
+    height: 100%;
+    margin-left:0%;
+    padding-right: 0%;
+  }
+  #produktInfo{
+    margin-right: 0%;
+    padding-left: 0%;
+  }
+  #produktNavn{
+    font-size: 60px;
   }
 }
 
@@ -502,48 +500,25 @@ footer{
 @media (max-width: 600px){
   main{
     grid-template-columns: 1fr;
-    background-color: pink;
     grid-gap: 1%;
   }
   #navForside{
-    padding-top: 5%;
-    padding-bottom: 5%;
+    background-color: transparent;
+    padding-top: 2%;
+    padding-bottom: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5%;
-    margin-bottom: 5%;
-    border-bottom: 1px solid darkgrey;
-  }
-  #vår19{
-    grid-column:  1/3;
-  }
-  #vår19tekst{ /*får ikke vårtekst eller festtekst til å dekke grid 1/3,
-    slik bildene deres gjør*/
-    grid-column: 1/3;
-    font-size: 60px;
-    font-style: none;
-    text-decoration: none;
-    color: black;
-  }
-  #fest{
-    grid-column:  1/3;
-  }
-  #festtekst{
-    grid-column: 1/3;
-    font-size: 60px;
-  }
-  #grønn{
-    grid-column:  1/2;
-  }
-  #grønntekst{
-    grid-column: 2/3;
-    font-size: 60px;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
   }
   .text{
     font-size: 20px;
   }
   .dropdownTo {
-    left: 10px;
+    left: 10%;
   }
 
   .dropdown:hover .dropdownEn, #knapp1:hover > .dropdownTo {
@@ -552,70 +527,29 @@ footer{
   .dropdownEn {
     min-width: 150px;
   }
-  .infovarer{
-    margin-top: 20%;
-  }
   #produktBilde{
-    margin-left:0% ;
+    width: 100%;
+    height: 100%;
+    margin-left:0%;
+    padding-right: 0%;
+  }
+  #produktInfo{
+    margin-right: 0%;
+    padding-left: 0%;
   }
   #produktNavn{
-    margin-left: 0%;
+    font-size: 50px;
+  }
+  #produktStoff{
+    font-size: 20px;
+  }
+  #produktAnledning{
+    font-size: 20px;
   }
   #produktPris{
-    margin-left: 0%;
+    font-size: 15px;
   }
-  #produktKnapper{
-    margin-left: 0%;
-    margin-top: 2%;
-  }
-  img{
-    width: 70%;
-    height: 70%;
+  footer{
+    margin-top: 45%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-/*#vår19{
-  grid-column:  1/4;
-  width: 70%;
-  height: 70%;
-}
-#vår19tekst{
-  grid-column: 4/5;
-  font-size: 220px;
-}
-#fest{
-  grid-column:  2/5;
-}
-#festtekst{
-  grid-column: 1/2;
-  font-size: 220px;
-}
-#grønn{
-  grid-column:  1/3;
-}
-#grønntekst{
-  grid-column: 3/5;
-  font-size: 220px;
-}*/
-
-
-/*On smaller screens, decrease text size
-@media only screen and (max-width: 900px) {
-  .text {font-size: 50px}
-}*/
-
-
-/*.produkterForside{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}*/

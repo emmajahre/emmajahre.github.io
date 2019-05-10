@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="handlekurv.css">
+    <link rel="stylesheet" href="look.css">
     <title>Emz Fashion - takk for handelen</title>
 
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
@@ -21,17 +21,27 @@
 
   </head>
   <body>
-    <header>
 
-      <p>EMZ FASHION</p>
 
-      <nav id="navHandlekurv">
-      <a href="hovedside.html">Handle mer</a>
-      </nav>
+      <header>
+        <a id="EmzFahsionLogo" href="hovedside.html">EMZ FASHION</a>
+      </header>
 
-    </header>
+      <nav id="navForside">
+        <div class="dropdown">
+            <div class="dropknapp">
+              <a href="hovedside.html">Handle mer</a>
+            </div>
+        </div>
 
-    <main>
+    </nav>
+
+
+
+    <main id="handlekurvGrid">
+
+      <h1>DIN HANDLEKURV</h1>
+
       <div class="handlelapp">
         <ul>
           <li>Navn Produkt 1, modell, pris</li>
@@ -43,28 +53,43 @@
 
       </div>
 
-      <h3>Leveringsdetaljer</h3>
-
         <div class="kontaktinfo">
+          <h1>Leveringsdetaljer</h1>
 
-          <form action="takkforhandel.html">
+        <div class="knapper">
+           <form action="takkforhandel.html">
             <label>Adresse:</label>
             <input type="text" name="adresse" placeholder="Legg til adresse" required id="kontaktopplysning">
+        </div>
 
-
+        <div class="knapper">
           <form action="takkforhandel.html">
-            <label>Dato:</label>
-            <input type="text" name="fornavn" placeholder="dd.mm.åå" required id="kontaktopplysning">
+            <label>Fornavn:</label>
+            <input type="text" name="fornavn" placeholder="Jens ...." required id="kontaktopplysning">
+        </div>
 
-
+        <div class="knapper">
           <form action="takkforhandel.html">
-            <label>Navn:</label>
-            <input type="text" name="fornavn" placeholder="22334455" required id="kontaktopplysning">
+            <label>Etternavn:</label>
+            <input type="text" name="fornavn" placeholder="....Jensen" required id="kontaktopplysning">
+        </div>
 
+        <div class="knapper">
+          <form action="takkforhandel.html">
+            <label>Kortnummer:</label>
+            <input type="text" name="fornavn" placeholder="1234.12.1234" required id="kontaktopplysning">
+        </div>
+
+        <div class="knapper">
+          <form action="takkforhandel.html">
+            <label>CVC:</label>
+            <input type="text" name="fornavn" placeholder="123" required id="kontaktopplysning">
+        </div>
 
           <button type="submit" id="bestill">Bestill!</button>
 
           </form>
+        </div>
 
     </main>
 

@@ -1,9 +1,14 @@
 body{
   text-align: center;
-  max-width: 1200px;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color:white;
   margin: auto;
   margin-top: 120px;
+  max-width: 1500px;
+}
+#hovedbilde{
+
 }
 p,img{
   width: 100%;
@@ -18,7 +23,7 @@ nav{
   margin-top:0px;
   padding: 15px;
   position: fixed;
-  width: 1170px;
+  width: 100%;
   top: 0;
   background-color: white;
   display: grid;
@@ -316,4 +321,177 @@ klokka er 22.40.....*/
   #innholdfooter{
     font-size: 20px;
     margin-bottom: -10px;
+  }
+
+
+  /*MEDIA QUERY*/
+
+  @media (max-width: 1200px){
+      .produktsidegrid{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      #navForside{
+        background-color: transparent;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5%;
+        margin-bottom: 3%;
+        margin-top: 1%;
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+      }
+      .text{
+        font-size: 30px;
+      }
+      #produktBilde{
+        width: 80%;
+        height: 100%;
+        margin-left:20%;
+        padding-right: 0%;
+      }
+      #produktInfo{
+        margin-right: 10%;
+        padding-left: 0%;
+      }
+      #produktNavn{
+        font-size: 80px;
+      }
+  }
+
+
+
+  @media (max-width: 900px){
+    .produktsidegrid{
+      grid-template-columns: 1fr 1fr;
+    }
+    .kategorierforside{
+      grid-template-columns: 1fr 1fr;
+    }
+    p{
+      font-size: 20px;
+    }
+    #navForside{
+      background-color: transparent;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5%;
+      margin-bottom: 3%;
+      margin-top: 1%;
+      border-bottom: 3px solid black;
+      border-top: 3px solid black;
+    }
+    .dropdownTo {
+      left: 10%;
+    }
+
+    .dropdown:hover .dropdownEn, #knapp1:hover > .dropdownTo {
+      z-index: 10;
+    }
+    .dropdownEn {
+      min-width: 150px;
+    }
+
+    img{
+      width: 90%;
+      height: 90%;
+    }
+    #slidebilder{
+      width: 100%;
+      height:100%;
+    }
+    #produktBilde{
+      width: 100%;
+      height: 100%;
+      margin-left:0%;
+      padding-right: 0%;
+    }
+    #produktInfo{
+      margin-right: 0%;
+      padding-left: 0%;
+    }
+    #produktNavn{
+      font-size: 60px;
+    }
+  }
+
+
+
+  @media (max-width: 600px){
+    .produktsidegrid{
+      grid-template-columns: 1fr;
+      grid-gap: 1%;
+    }
+    .kategorierforside{
+      grid-template-columns: 1fr;
+    }
+    .slagord{
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap:15px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+    }
+    p{
+      font-size: 15px;
+    }
+    #punch{
+      width: 80px;
+      height: 60px;
+    }
+    #navForside{
+      background-color: transparent;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5%;
+      margin-bottom: 3%;
+      margin-top: 1%;
+      border-bottom: 3px solid black;
+      border-top: 3px solid black;
+    }
+    .text{
+      font-size: 20px;
+    }
+    .dropdownTo {
+      left: 10%;
+    }
+
+    .dropdown:hover .dropdownEn, #knapp1:hover > .dropdownTo {
+      z-index: 10;
+    }
+    .dropdownEn {
+      min-width: 150px;
+    }
+    #produktBilde{
+      width: 100%;
+      height: 100%;
+      margin-left:0%;
+      padding-right: 0%;
+    }
+    #produktInfo{
+      margin-right: 0%;
+      padding-left: 0%;
+    }
+    #produktNavn{
+      font-size: 50px;
+    }
+    #produktStoff{
+      font-size: 20px;
+    }
+    #produktAnledning{
+      font-size: 20px;
+    }
+    #produktPris{
+      font-size: 15px;
+    }
+    footer{
+      margin-top: 45%;
+    }
   }
